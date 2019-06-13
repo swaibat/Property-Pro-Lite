@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <title>Property-Pro-Lite</title>
+</head>
+
+<body>
+    <div id="bg" class="bg"></div>
+    <!-- start of navigation -->
+    <nav class="flex-x padding-y-1 fixed-top full-width">
+        <div class="logo margin-l-3 margin-t-2"><a href="index.html">Property Pro Lite</a></div>
+        <!-- navigation -->
+        <div class="margin-l-auto margin-r-3 d-flex">
+            <ul class="d-flex white-txt">
+                <li class=""><a class="active white-txt" href="dashboard.html">Dashboard</a></li>
+                <li class="margin-l-3"><a class="active white-txt" href="postad.html">post ad</a></li>
+                <li class="margin-l-3"><a class="active white-txt" href="myads.html">my ads</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <!-- //navigation -->
+    <aside class="navbar fixed-left" id="collapse-menu">
+        <div class="flex-center">
+            <img class="circle" src="./assets/img/user.svg" height="85" width="85" alt="user">
+        </div>
+        <ul class="flex-y white-txt">
+            <li class="margin-y-3"><a class="" href="#">welcome! <h1>Agent</h1></a></li>
+            <li class="margin-y-3"><a class="" href="#">messages</a></li>
+            <li class="margin-y-3"><a class="" href="#">Notifications</a></li>
+            <li class="margin-y-3"><a class="" href="#">Logout</a></li>
+        </ul>
+    </aside>
+    <main role="main">
+        <div class="white padding-1 shadow border-radius full-width page-container">
+            <form class="margin-3" action="">
+                <h2 class="align-center margin-l-n3">Post Ad</h2>
+                <select class="form-input ">
+                    <option value="available">Available</option>
+                    <option value="sold">Sold</option>
+                </select>
+                <input class="form-input" type="number" placeholder="price" required>
+                <input class="form-input" type="text" placeholder="state" required>
+                <input class="form-input" type="text" placeholder="city" required>
+                <input class="form-input" type="text" placeholder="address" required>
+                <input class="form-input" type="text" placeholder="type" required>
+                <input class="form-input" type="file" required>
+                <button href="index.html" class="btn blue  margin-y-2 float-right ">post ad</button>
+            </form>
+        </div>
+    </main>
+
+
+    <footer class="shadow-top padding-y-3 white full-width">
+        <a>Property Pro Lite 2019</a>
+    </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
