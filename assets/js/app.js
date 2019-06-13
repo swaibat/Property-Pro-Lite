@@ -1,12 +1,24 @@
-// modal script
-const modal = document.querySelector('.modal-container');
-const openModalButton = document.querySelector('.open-modal');
-const closeModalButton = document.querySelector('.close-modal');
+// // modal script
+const signupmodal = document.querySelector('#signup-modal'),
+  signupButton = document.querySelector('#signup'),
+  closeModalButton = document.querySelector('.close-modal'),
+  // sinin const
+  signinmodal = document.querySelector('#signin-modal'),
+  signinButton = document.querySelector('#signin'),
+  signinclose = document.querySelector('#close-signin');
 
-openModalButton.addEventListener('click', () => {
-    modal.classList.add('visible');
-})
+signupButton.addEventListener('click', () => {
+  signupmodal.classList.add('visible');
+});
 
 closeModalButton.addEventListener('click', () => {
-    modal.classList.remove('visible');
-})
+  signupmodal.classList.remove('visible');
+});
+
+// // login
+signinButton.addEventListener('click', () => {
+  signinmodal.classList.add('visible');
+});
+signinclose.addEventListener('click', () => {
+  signinmodal.classList.remove('visible');
+});

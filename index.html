@@ -18,7 +18,7 @@
         <div class="margin-l-auto margin-r-3 d-flex">
             <ul class="d-flex white-txt">
                 <li>About us</li>
-                <li class="margin-l-3" >Contact us</li>
+                <li class="margin-l-3">Contact us</li>
             </ul>
         </div>
     </nav>
@@ -28,7 +28,7 @@
             <div class="left-side  margin-t-max">
                 <h2 class="white-txt margin-l-4">Property Pro Lite is a platform where people can create and/or search properties for sale or rent</h2>
                 <div class="d-flex margin-t-4">
-                    <button id="signin" class="btn green btn-lg margin-l-4 open-modal">signin now</button>
+                    <button id="signin" class="btn green btn-lg margin-l-4">signin now</button>
                     <button id="signup" class="btn white blue-txt btn-lg margin-l-4">signup now</button>
                 </div>
             </div>
@@ -38,18 +38,29 @@
         </div>
     </main>
     <!-- start of form models -->
-    <div class="modal-container">
+    <div id="signup-modal" class="modal-container">
         <div class="modal">
             <button class="close-modal">X</button>
             <form action="">
                 <h2 class="align-center margin-l-n3">sign-up</h2>
                 <input class="form-input" type="text" placeholder="Firstname" required>
                 <input class="form-input" type="text" placeholder="Lastname" required>
-                <input class="form-input" type="text" placeholder="Username" required>
                 <input class="form-input" type="number" placeholder="phoneNumber" required>
                 <input class="form-input" type="email" placeholder="Email adress" required>
                 <input class="form-input" type="password" placeholder="Password" minlength="5" required>
-                <button href=index.html class="btn blue  margin-y-4 float-right ">Signup now</button>
+                <button href="index.html" class="btn blue  margin-y-4 float-right ">Signup now</button>
+            </form>
+        </div>
+    </div>
+    <!-- start of login model -->
+    <div id="signin-modal" class="modal-container">
+        <div class="modal">
+            <button id="close-signin" class="close-modal">X</button>
+            <form action="">
+                <h2 class="align-center margin-l-n3">signIn</h2>
+                <input class="form-input" type="email" placeholder="Email adress" required>
+                <input class="form-input" type="password" placeholder="Password" minlength="5" required>
+                <button href="index.html" class="btn blue  margin-y-4 float-right ">Signin</button>
             </form>
         </div>
     </div>
