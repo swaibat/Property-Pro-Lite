@@ -28,7 +28,10 @@ html {
   margin: -1rem;
   z-index: -10;
 }
-
+.bg{
+  position: fixed !important;
+  clip-path: polygon(100% 0, 100% 23%, 80% 35%, 0 21%, 0 0) !important;
+}
 .bg-img {
   width: 42%;
   position: absolute;
@@ -50,9 +53,8 @@ li {
 }
 
 .navbar {
-  background: white;
-  width: 9.5rem;
-  margin-top: 3.5rem;
+  width: 10.5rem;
+  margin-top: 5.5rem;
   font-size: 15px;
   height: calc(100vh - 3rem);
 }
@@ -69,7 +71,7 @@ main {
 
 nav {
   height: 3rem;
-  background: #fbfbfb33;
+  /* background: #fbfbfb33; */
 }
 
 .page-container {
@@ -145,7 +147,7 @@ footer {
   font-family: 'Roboto', sans-serif;
 }
 
-input:focus {
+select:focus,input:focus {
   outline-style: none;
   box-shadow: 0 1px 0 var(--theme-color);
   border-top: transparent;
@@ -414,14 +416,6 @@ input:focus {
   width: 100%;
   font-size: 15px !important;
   text-align: left;
-}
-
-th {
-  border-bottom: 1px solid gray !important;
-}
-
-tbody tr:nth-child(odd) {
-  background: whitesmoke;
 }
 
 th,
@@ -1257,7 +1251,11 @@ td {
   display: none;
 }
 
-
+.sport-badge{
+  min-width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
 /* modal style */
 
 .modal-container {
