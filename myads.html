@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <title>Property-Pro-Lite</title>
+</head>
+
+<body>
+    <div id="bg" class="bg"></div>
+    <!-- start of navigation -->
+    <nav class="flex-x padding-y-1 fixed-top full-width">
+        <div class="logo margin-l-3 margin-t-2"><a href="index.html">Property Pro Lite</a></div>
+        <!-- navigation -->
+        <div class="margin-l-auto margin-r-3 d-flex">
+            <ul class="d-flex white-txt">
+                <li class=""><a class="active white-txt" href="dashboard.html">Dashboard</a></li>
+                <li class="margin-l-3"><a class="active white-txt" href="postad.html">post ad</a></li>
+                <li class="margin-l-3"><a class="active white-txt" href="myads.html">my ads</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <!-- //navigation -->
+    <aside class="navbar fixed-left" id="collapse-menu">
+        <div class="flex-center">
+            <img class="circle" src="./assets/img/user.svg" height="85" width="85" alt="user">
+        </div>
+        <ul class="flex-y white-txt">
+            <li class="margin-y-3"><a class="" href="#">welcome! <h1>Agent</h1></a></li>
+            <li class="margin-y-3"><a class="" href="#">messages</a></li>
+            <li class="margin-y-3"><a class="" href="#">Notifications</a></li>
+            <li class="margin-y-3"><a class="" href="#">Logout</a></li>
+        </ul>
+    </aside>
+    <main role="main">
+        <div class="white padding-1 shadow border-radius full-width page-container">
+            <h3 class="margin-l-2">my ads</h3>
+            <div class="scroll-table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="">image</th>
+                            <th>Ad name</th>
+                            <th>date</th>
+                            <th>Amount</th>
+                            <th>status</th>
+                            <th>operation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img class="ad-img orange shadow" src="./assets/img/ads/computer_pc_PNG7714.webp" alt="ad"></td>
+                            <td>Computer</td>
+                            <td>09-11-2019</td>
+                            <td>$25000</td>
+                            <td><a href="adDetails.html" class="btn small-btn f-green">available</a></td>
+                            <td><a href="product.html" class="btn pin-btn blue"><span class="icon-proppencillite margin-r-1"></span></a><a class="btn pin-btn red signup"><span class="icon-propbinlite margin-r-1"></span></a></td>
+                        </tr>
+                        <tr>
+                            <td><img class="ad-img shadow" src="./assets/img/ads/house_PNG7.webp" alt="ad"></td>
+                            <td>House</td>
+                            <td>09-11-2019</td>
+                            <td>$25000</td>
+                            <td><a href="adDetails.html" class="btn small-btn f-red">sold</a></td>
+                            <td><a href="product.html" class="btn pin-btn blue"><span class="icon-proppencillite margin-r-1"></span></a><a id="signup"  class="btn pin-btn red"><span class="icon-propbinlite margin-r-1"></span></a></td>
+                        </tr>
+                        <tr>
+                            <td><img class="ad-img blue shadow" src="./assets/img/ads/camaro_PNG31.webp" alt="ad"></td>
+                            <td>Camaro</td>
+                            <td>09-11-2019</td>
+                            <td>$25000</td>
+                            <td><a href="adDetails.html" class="btn small-btn f-green">available</a></td>
+                            <td><a href="product.html" class="btn pin-btn blue"><span class="icon-proppencillite margin-r-1"></span></a><a class="btn pin-btn red signup"><span class="icon-propbinlite margin-r-1"></span></a></td>
+                        </tr>
+                        <tr>
+                            <td><img class="ad-img shadow" src="./assets/img/ads/motorcycle_PNG3132.webp" alt="ad"></td>
+                            <td>Motocycle</td>
+                            <td>09-11-2019</td>
+                            <td>$25000</td>
+                            <td><a href="adDetails.html" class="btn small-btn f-green">available</a></td>
+                            <td><a href="product.html" class="btn pin-btn blue"><span class="icon-proppencillite margin-r-1"></span></a><a id="signup"  class="btn pin-btn red"><span class="icon-propbinlite margin-r-1"></span></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer class="shadow-top padding-y-3 white full-width">
+        <a>Property Pro Lite 2019</a>
+    </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

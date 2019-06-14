@@ -23,8 +23,7 @@
             </ul>
         </div>
     </nav>
-    
-    
+
     <!-- //navigation -->
     <aside class="navbar fixed-left" id="collapse-menu">
         <div class="flex-center">
@@ -39,20 +38,25 @@
     </aside>
     <main role="main">
         <div class="white padding-1 shadow border-radius full-width page-container">
-            <form class="margin-3" action="product.html">
-                <h2 class="align-center margin-l-n3">Post Ad</h2>
-                <input class="form-input" placeholder="Product name">
-                <input class="form-input" type="number" placeholder="price" required>
-                <input class="form-input" id="autocomplete" placeholder="Enter your address" onFocus="geolocate()"type="text"/>
-                <input class="form-input" id="locality" placeholder="city">
-                <input class="form-input" id="administrative_area_level_1" placeholder="state" >
-                <input class="form-input" type="text" placeholder="type" required>
-                <input class="form-input" type="file" required>
-                <button class="btn blue  margin-y-2 float-right ">post ad</button>
+            <form class="margin-3" action="">
+                <h2 class="align-center margin-l-n3">Edit Advert</h2>
+                <input class="form-input" placeholder="Product name" value="Kansas house">
+                <div class="form-grp">
+                    <select class="form-input lg-50 sm-100">
+                        <option value="available">Available</option>
+                        <option value="sold">Sold</option>
+                    </select>
+                    <input class="form-input lg-50 sm-100 margin-l-auto" type="number" placeholder="price" value="2000">
+                </div>
+                <input class="form-input" id="autocomplete" placeholder="Enter your address" onFocus="geolocate()" type="text" value="Telecom House, KG 7 Avenue, Kigali, Rwanda" />
+                <input class="form-input" id="locality" placeholder="city" value="Kigali">
+                <input class="form-input" id="administrative_area_level_1" placeholder="state" value="Kigali City" >
+                <input class="form-input" type="text" placeholder="type" value="5 bedroom">
+                <input class="form-input" type="file">
+                <button href="index.html" class="btn btn-gradient  margin-y-2 float-right "><span class="icon-proppencillite margin-r-1"></span>Edit</button>
             </form>
         </div>
     </main>
-
 
     <footer class="shadow-top padding-y-3 white full-width">
         <a>Property Pro Lite 2019</a>
