@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <title>Property-Pro-Lite</title>
+</head>
+
+<body>
+    <div id="bg" class="bg"></div>
+    <!-- start of navigation -->
+    <nav class="flex-x padding-y-1 fixed-top full-width">
+        <div class="logo margin-l-3 margin-t-2"><a href="index.html">Property Pro Lite</a></div>
+        <!-- navigation -->
+        <div class="margin-l-auto margin-r-3 d-flex">
+            <ul class="d-flex white-txt">
+                <li class=""><a class="active white-txt" href="dashboard.html">Dashboard</a></li>
+                <li class="margin-l-3"><a class="active white-txt" href="postad.html">post ad</a></li>
+                <li class="margin-l-3"><a class="active white-txt" href="myads.html">my ads</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- //navigation -->
+    <aside class="navbar fixed-left" id="collapse-menu">
+        <div class="flex-center">
+            <img class="circle" src="./assets/img/user.svg" height="85" width="85" alt="user">
+        </div>
+        <ul class="flex-y white-txt">
+            <li class="margin-y-3"><a class="" href="#">welcome! <h1>Agent</h1></a></li>
+            <li class="margin-y-3"><a class="" href="#">messages</a></li>
+            <li class="margin-y-3"><a class="" href="#">Notifications</a></li>
+            <li class="margin-y-3"><a class="" href="#">Logout</a></li>
+        </ul>
+    </aside>
+    <main role="main">
+        <div class="white padding-1 shadow border-radius full-width page-container">
+            <div class="d-flex product padding-3">
+                <div class="detail-img padding-2">
+                    <button class="btn blue">available</button>
+                    <img class="margin-t-n1" src="./assets/img/ads/house_PNG7.webp" alt="product">
+                </div>
+                <!-- left product details -->
+                <div class="flex-y prdt-dtls">
+                    <h1 class="margin-1">Capital house GH700</h1>
+                    <div class="d-flex">
+                        <p><b>Ad id :</b> 653821871 </p>
+                        <p class="margin-l-3"><b>Location :</b>kigali </p>
+                        <p class="margin-l-3"> <b>Type :</b> 5 Bedrooms</p>
+                    </div>
+                    <h2>$150</h2>
+                    <p class="text-center">Lorem ipsum dolor sit amet, no mea aperiri invenire, nisl dolore mollis ad sed, ei sonet singulis persequeris sea.</p>
+                    <!--The div element for the map -->
+                    <div id="map"></div>
+                    <div class="d-flex float-right margin-t-2">
+                        <a href="editad.html" class="btn btn-gradient "><span class="icon-proppencillite margin-r-1"></span>Edit</a>
+                        <a class="btn red margin-l-auto"><span class="icon-propbinlite margin-r-1"></span>Delete</a>
+                    </div>
+                    <script>
+                        // Initialize and add the map
+                        function initMap() {
+                            // The location of Uluru
+                            var uluru = {
+                                lat: -25.344,
+                                lng: 131.036
+                            };
+                            // The map, centered at Uluru
+                            var map = new google.maps.Map(
+                                document.getElementById('map'), {
+                                    zoom: 4,
+                                    center: uluru
+                                });
+                            // The marker, positioned at Uluru
+                            var marker = new google.maps.Marker({
+                                position: uluru,
+                                map: map
+                            });
+                        }
+                    </script>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtdJ2lMzLN7jGl_KHHWv1UvXrhqExiSUM&callback=initMap"></script>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="shadow-top padding-y-3 white full-width">
+        <a>Property Pro Lite 2019</a>
+    </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 /* global css */
 
 :root {
-  --theme-color: #01baef;
+  --theme-color: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
   --white: white;
   --orange: orange;
   --red: red;
@@ -13,6 +13,17 @@
   --linear-gradient: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
   --clip-path: polygon(100% 0, 100% 53%, 20% 100%, 0 100%, 0 0);
   --border-radius: .3rem;
+}
+
+
+/* my custom font */
+
+@font-face {
+  font-family: 'property-pro';
+  src: url('../fonts/property-pro.eot?onizv0');
+  src: url('../fonts/property-pro.eot?onizv0#iefix') format('embedded-opentype'), url('../fonts/property-pro.ttf?onizv0') format('truetype'), url('../fonts/property-pro.woff?onizv0') format('woff'), url('../fonts/property-pro.svg?onizv0#property-pro') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 html {
@@ -28,10 +39,12 @@ html {
   margin: -1rem;
   z-index: -10;
 }
-.bg{
+
+.bg {
   position: fixed !important;
   clip-path: polygon(100% 0, 100% 23%, 80% 35%, 0 21%, 0 0) !important;
 }
+
 .bg-img {
   width: 42%;
   position: absolute;
@@ -78,7 +91,6 @@ nav {
   margin-top: 6rem;
   margin-left: 12rem;
   margin-right: 1rem;
-  overflow-x: auto;
 }
 
 .container {
@@ -92,7 +104,6 @@ footer {
   margin-bottom: -.5rem;
   height: 1rem;
   bottom: 0;
-  z-index: -1;
   position: fixed;
 }
 
@@ -147,7 +158,8 @@ footer {
   font-family: 'Roboto', sans-serif;
 }
 
-select:focus,input:focus {
+select:focus,
+input:focus {
   outline-style: none;
   box-shadow: 0 1px 0 var(--theme-color);
   border-top: transparent;
@@ -177,10 +189,45 @@ select:focus,input:focus {
   }
 }
 
+.detail-img {
+  width: 40%;
+}
+
+.detail-img img {
+  width: 100%;
+}
+
+.prdt-dtls {
+  width: 60%;
+}
+
+.prdt-dtls p {
+  letter-spacing: .1px;
+  word-spacing: .1rem;
+}
+
 
 /* Medium devices */
 
 @media (max-width: 768px) {
+  .detail-img {
+      width: 100%;
+  }
+  .sm-100 {
+      width: 100% !important;
+  }
+  .form-grp {
+      flex-direction: column;
+  }
+  .product {
+      flex-direction: column;
+  }
+  .prdt-dtls {
+      width: 100%;
+  }
+  .detail-img img {
+      width: 100%;
+  }
   .navbar {
       width: 100%;
       height: 0rem;
@@ -360,6 +407,10 @@ select:focus,input:focus {
   color: #ffffff;
 }
 
+.btn-gradient {
+  background: var(--linear-gradient);
+}
+
 .btn-sm {
   padding: 7px 13px !important;
   font-size: 15px;
@@ -383,13 +434,13 @@ select:focus,input:focus {
 .small-btn {
   font-size: 11px !important;
   padding: 2px 10px !important;
-  border-radius: 10px;
+  border-radius: 3px;
   font-weight: normal;
 }
 
 .pin-btn {
-  font-size: 11px !important;
-  padding: 2px 10px !important;
+  font-size: 12px !important;
+  padding: 5px 10px !important;
   font-weight: normal;
   border-radius: 0px;
 }
@@ -1251,11 +1302,13 @@ td {
   display: none;
 }
 
-.sport-badge{
+.sport-badge {
   min-width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
 }
+
+
 /* modal style */
 
 .modal-container {
@@ -1315,4 +1368,68 @@ td {
   height: 1.9rem;
   border: solid 1px gainsboro;
   cursor: pointer;
+}
+
+.ad-img {
+  width: 4.5rem;
+  height: 3.5rem;
+  border-radius: .5rem;
+}
+
+.product h2 {
+  display: block;
+  font-size: 1.5em;
+  margin: 2px;
+}
+
+
+/* my icons */
+
+[class^="icon-prop"],
+[class*=" icon-prop"] {
+  font-family: 'property-pro' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-proppencillite:before {
+  content: "\e905";
+}
+
+.icon-propphonelite:before {
+  content: "\e942";
+}
+
+.icon-propbinlite:before {
+  content: "\e9ac";
+}
+
+.icon-propswitchlite:before {
+  content: "\e9b6";
+}
+
+
+/* google map style */
+
+#map {
+  height: 200px;
+  width: 100%;
+}
+
+
+/* responsive column */
+
+.lg-50 {
+  width: 48%
+}
+
+.form-grp {
+  display: flex;
+  width: 100%;
 }
