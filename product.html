@@ -57,25 +57,36 @@
                     <div id="map"></div>
                     <div class="d-flex float-right margin-t-2">
                         <a href="editad.html" class="btn btn-gradient "><span class="icon-proppencillite margin-r-1"></span>Edit</a>
-                        <a class="btn red margin-l-auto"><span class="icon-propbinlite margin-r-1"></span>Delete</a>
+                        <a id="signup" class="btn red margin-l-auto"><span class="icon-propbinlite margin-r-1"></span>Delete</a>
                     </div>
                     <script>
+                        // function initialize() {
+                        // var address = 'hoima';
+                        //     geocoder = new google.maps.Geocoder();
+                        //     geocoder.geocode({
+                        //     'address': address
+                        //     }, function(results, status) {      
+                        //         var lat =results[0].geometry.location.lat();    
+                        //         var lng =results[0].geometry.location.lng();        
+                        //     });
+                        // }
+                        // google.maps.event.addDomListener(window, 'load', initialize);
                         // Initialize and add the map
                         function initMap() {
-                            // The location of Uluru
-                            var uluru = {
-                                lat: -25.344,
-                                lng: 131.036
+                            // The location of 
+                            var kampala = {
+                                lat: 0.347596,
+                                lng: 32.582520
                             };
-                            // The map, centered at Uluru
+                            // The map, centered at 
                             var map = new google.maps.Map(
                                 document.getElementById('map'), {
-                                    zoom: 4,
-                                    center: uluru
+                                    zoom: 9,
+                                    center: kampala
                                 });
-                            // The marker, positioned at Uluru
+                            // The marker, positioned at 
                             var marker = new google.maps.Marker({
-                                position: uluru,
+                                position: kampala,
                                 map: map
                             });
                         }
@@ -86,7 +97,18 @@
             </div>
         </div>
     </main>
-
+    <!-- confirm model -->
+    <div id="signup-modal" class="modal-container">
+            <div class="modal align-center padding-0 ">
+                <button id="close-signin" class="close-modal">X</button>
+                <div class="modal-title ">Delete item</div>
+                <div class="modal-text padding-2">Are you sure !!</div>
+                <div class="d-flex footer-btn">
+                    <a href="myads.html" class="btn modal-btn red-txt">CONFIRM</a>
+                    <a href="#"class="btn modal-btn blue-txt">CANCEL</a>
+                </div>
+            </div>
+        </div>
     <footer class="shadow-top padding-y-3 white full-width">
         <a>Property Pro Lite 2019</a>
     </footer>

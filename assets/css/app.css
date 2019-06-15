@@ -1,4 +1,5 @@
 /* global css */
+@import url('https://fonts.googleapis.com/css?family=Barlow:300,400,500');
 
 :root {
   --theme-color: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
@@ -27,7 +28,7 @@
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 #bg {
@@ -919,7 +920,9 @@ td {
 
 
 /* padding */
-
+.padding-0 {
+  padding: 0 !important;
+}
 .padding-l-0,
 .padding-x-0,
 .padding-0 {
@@ -1432,4 +1435,21 @@ td {
 .form-grp {
   display: flex;
   width: 100%;
+}
+
+/* confirm model */
+.modal-btn {
+  width: 50%;
+  border-left: 1px solid #dddddd;
+}
+.modal-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 5px 0;
+}
+.footer-btn {
+  text-align: center;
+  border-top: 1px solid #dddddd;
+  height: 44px;
 }
