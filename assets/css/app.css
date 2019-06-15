@@ -46,6 +46,11 @@ html {
   clip-path: polygon(100% 0, 100% 23%, 80% 35%, 0 21%, 0 0) !important;
 }
 
+.bg-user {
+  position: fixed !important;
+  clip-path: polygon(100% 0, 100% 49%, 78% 69%, 0 45%, 0 0) !important;
+}
+
 .bg-img {
   width: 42%;
   position: absolute;
@@ -1453,3 +1458,36 @@ td {
   border-top: 1px solid #dddddd;
   height: 44px;
 }
+
+/* product card */
+.card {
+  transition: 0.3s;
+  width: 40%;
+  border: solid 1px rgb(238, 237, 237);
+  margin: 10px;
+  box-shadow: var(--shadow);
+  border-radius:var(--border-radius);
+  overflow: hidden;
+  background: white;
+}
+.card-img{
+  width: 100%;
+  height: 12rem;
+}
+.card .btn{
+  border: solid 1px gainsboro;
+  line-height: 1.5;
+}
+.price{
+  padding: 5px 15px;
+  background: var(--teal);
+  border-radius:0 0 0 1rem;
+  color: white;
+}
+
+.card .card-footer{
+  box-shadow: var(--shadow-top);
+  padding:10px;
+}
+
+/* bg image */
