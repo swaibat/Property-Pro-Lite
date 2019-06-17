@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link href="assets/css/app.css" rel="stylesheet">
     <title>Property-Pro-Lite</title>
 </head>
-
 <body>
     <div id="bg" class="bg"></div>
     <!-- start of navigation -->
@@ -22,18 +20,17 @@
             </ul>
         </div>
     </nav>
-
     <!-- //navigation -->
     <aside class="navbar fixed-left" id="collapse-menu">
         <div class="flex-center">
             <img class="circle" src="./assets/img/user.svg" height="85" width="85" alt="user">
         </div>
         <ul class="flex-y white-txt">
-                <li class="margin-y-3"><a class="" href="#">welcome! <h1>Agent</h1></a></li>
-                <li class="margin-y-3"><a class="" href="#"><i class="icon-bubbles3-pro-lite margin-r-2"></i>messages</a></li>
-                <li class="margin-y-3"><a class="" href="#"><i class="icon-bubbles3-pro-lite margin-r-2"></i>Notifications</a></li>
-                <li class="margin-y-3"><a class="" href="index.html"><i class="icon-switch-pro-lite margin-r-2"></i> Logout</a></li>
-            </ul>
+            <li class="margin-y-3"><a class="" href="#">welcome! <h1>Agent</h1></a></li>
+            <li class="margin-y-3"><a class="" href="#"><i class="icon-bell-pro-lite margin-r-2"></i>messages</a></li>
+            <li class="margin-y-3"><a class="" href="#"><i class="icon-bubbles3-pro-lite margin-r-2"></i>Notifications</a></li>
+            <li class="margin-y-3"><a class="" href="index.html"><i class="icon-switch-pro-lite margin-r-2"></i> Logout</a></li>
+        </ul>
     </aside>
     <main role="main">
         <div class="white padding-1 shadow border-radius full-width page-container">
@@ -42,10 +39,10 @@
                     <button class="btn blue">available</button>
                     <img class="margin-t-n1" src="./assets/img/ads/house_PNG7.webp" alt="product">
                     <div class="footer-related">
-                            <img class="footer-img shadow" src="./assets/img/ads/house1/interior1.jpg" alt="product">
-                            <img class="footer-img shadow" src="./assets/img/ads/house1/interior2.jpg" alt="product">
-                            <img class="footer-img shadow" src="./assets/img/ads/house1/interior3.jpg" alt="product">
-                            <img class="footer-img shadow" src="./assets/img/ads/house1/interior4.jpg" alt="product">
+                        <img class="footer-img shadow" src="./assets/img/ads/house1/interior1.jpg" alt="product">
+                        <img class="footer-img shadow" src="./assets/img/ads/house1/interior2.jpg" alt="product">
+                        <img class="footer-img shadow" src="./assets/img/ads/house1/interior3.jpg" alt="product">
+                        <img class="footer-img shadow" src="./assets/img/ads/house1/interior4.jpg" alt="product">
                     </div>
                 </div>
                 <!-- left product details -->
@@ -65,59 +62,26 @@
                         <a href="myads.html" class="btn orange margin-l-3 "><i class="icon-checkmark-pro-lite margin-r-1"></i>sold</a>
                         <a onclick="deleteModal()" class="btn red margin-l-auto"><i class="icon-bin2-pro-lite margin-r-1"></i>Delete</a>
                     </div>
-                    <script>
-                        // function initialize() {
-                        // var address = 'hoima';
-                        //     geocoder = new google.maps.Geocoder();
-                        //     geocoder.geocode({
-                        //     'address': address
-                        //     }, function(results, status) {      
-                        //         var lat =results[0].geometry.location.lat();    
-                        //         var lng =results[0].geometry.location.lng();        
-                        //     });
-                        // }
-                        // google.maps.event.addDomListener(window, 'load', initialize);
-                        // Initialize and add the map
-                        function initMap() {
-                            // The location of 
-                            var kampala = {
-                                lat: 0.347596,
-                                lng: 32.582520
-                            };
-                            // The map, centered at 
-                            var map = new google.maps.Map(
-                                document.getElementById('map'), {
-                                    zoom: 9,
-                                    center: kampala
-                                });
-                            // The marker, positioned at 
-                            var marker = new google.maps.Marker({
-                                position: kampala,
-                                map: map
-                            });
-                        }
-                    </script>
-                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtdJ2lMzLN7jGl_KHHWv1UvXrhqExiSUM&callback=initMap"></script>
                 </div>
-
             </div>
         </div>
     </main>
     <!-- confirm model -->
     <div id="delete" class="modal-container">
-            <div class="modal align-center padding-0 ">
-                <div class="modal-title ">Delete item</div>
-                <div class="modal-text padding-2">Are you sure !!</div>
-                <div class="d-flex footer-btn">
-                    <a href="myads.html" class="btn modal-btn red-txt">CONFIRM</a>
-                    <a onclick="closeDelete()" class="btn modal-btn blue-txt">CANCEL</a>
-                </div>
+        <div class="modal align-center padding-0 ">
+            <div class="modal-title ">Delete item</div>
+            <div class="modal-text padding-2">Are you sure !!</div>
+            <div class="d-flex footer-btn">
+                <a href="myads.html" class="btn modal-btn red-txt">CONFIRM</a>
+                <a onclick="closeDelete()" class="btn modal-btn blue-txt">CANCEL</a>
             </div>
         </div>
+    </div>
     <footer class="shadow-top padding-y-3 white full-width">
         <a>Property Pro Lite 2019</a>
     </footer>
     <script src="assets/js/app.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtdJ2lMzLN7jGl_KHHWv1UvXrhqExiSUM&callback=initMap"></script>
 </body>
 
 </html>

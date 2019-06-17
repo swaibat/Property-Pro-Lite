@@ -1,3 +1,22 @@
+function initMap() {
+  // The location of 
+  var kampala = {
+      lat: 0.347596,
+      lng: 32.582520
+  };
+  // The map, centered at 
+  var map = new google.maps.Map(
+      document.getElementById('map'), {
+          zoom: 9,
+          center: kampala
+      });
+  // The marker, positioned at 
+  var marker = new google.maps.Marker({
+      position: kampala,
+      map: map
+  });
+}
+
 // delete confirm
 function closeDelete(){
   document.querySelector('#delete').classList.remove('visible');
