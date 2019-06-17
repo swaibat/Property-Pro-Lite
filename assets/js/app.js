@@ -103,9 +103,9 @@ photoUpload.onchange = function () {
       reader.onload = function (event) {
         	let previewImage = document.createElement('img'),
         	previewImageBox = document.createElement('div'),
-          removeImage = document.createElement('span');
+          removeImage = document.createElement('i');
           let att = document.createAttribute("class");
-          att.value = "icon-propbinlite";
+          att.value = "icon-bin2-pro-lite";
           removeImage.setAttributeNode(att);
         	let removeIcon = document.createTextNode(' ');
         	removeImage.appendChild(removeIcon);
