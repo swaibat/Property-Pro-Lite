@@ -26,14 +26,16 @@
   font-weight: normal;
   font-style: normal;
 }
-
+img,.card{
+  transition: .4s ease all;
+}
 html {
   font-family: 'Barlow', sans-serif;
 }
 
 #bg {
-  width: 101vw;
-  height: 101vh;
+  width: 110%;
+  height: 110%;
   clip-path: var(--clip-path);
   position: absolute;
   background: var(--linear-gradient);
@@ -77,6 +79,15 @@ li {
   font-size: 15px;
   height: calc(100vh - 3rem);
 }
+.footer-related{
+  width: 100%;
+  white-space: nowrap;
+}
+.footer-img{
+  width: 23% !important;
+  margin:2px;
+  border-radius: 10px;
+}
 
 .logo a {
   font-size: 25px;
@@ -94,7 +105,7 @@ nav {
 }
 
 .page-container {
-  margin-top: 6rem;
+  margin-top: 4rem;
   margin-left: 12rem;
   margin-right: 1rem;
 }
@@ -180,6 +191,10 @@ input:focus {
   text-align: center;
 }
 
+.card-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* ========================[ media queries ]=====================*/
 
@@ -189,9 +204,6 @@ input:focus {
 @media (max-width: 576px) {
   .card-wrapper {
       flex-wrap: wrap;
-  }
-  .stat-card {
-      width: 95% !important;
   }
 }
 
@@ -219,6 +231,10 @@ input:focus {
   .detail-img {
       width: 100%;
   }
+  .card {
+    width: 100%;
+  }
+
   .sm-100 {
       width: 100% !important;
   }
@@ -248,20 +264,23 @@ input:focus {
       width: 40%;
   }
   nav {
-      background: #fff;
+      background: var(--theme-color);
   }
   .logo a {
       font-size: 25px;
       color: var(--white);
   }
-  .landing .left-side,
-  #bg {
+  .landing .right-side{
       display: none;
   }
-  .landing .right-side {
+  .landing .left-side {
       margin-top: 3rem;
       width: 100%;
   }
+  .landing .right-side {
+    margin-top: 3rem;
+    width: 100%;
+}
   .drop-content {
       padding: 1.5rem;
       margin-top: 3.5rem;
@@ -411,6 +430,7 @@ input:focus {
   line-height: 1.5;
   cursor: pointer;
   color: #ffffff;
+  white-space: nowrap;
 }
 
 .btn-gradient {
@@ -462,23 +482,116 @@ input:focus {
 }
 
 
-/* table */
-
-.scroll-table {
-  overflow-x: auto;
+/* table styles */
+table {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  font: 16px Arimo, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  border-collapse: collapse;
 }
 
-.table {
-  background: white;
-  width: 100%;
-  font-size: 15px !important;
+td {
+  text-align: center;
+  padding: 8px 10px 10px;
+  border-bottom: #b2b2b2 1px solid;
+}
+td:first-child,th:first-child{
   text-align: left;
 }
+th {
+  background: #999;
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+}  
+@media only screen and (max-width: 47.9375em) {
+  .responsive-tables table,
+  .responsive-tables thead,
+  .responsive-tables tbody,
+  .responsive-tables th,
+  .responsive-tables td,
+  .responsive-tables tr {
+      display: block;
+  }
+  .responsive-tables thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+  }
+  .responsive-tables tr:not(.section) {
+      border: 1px solid #bbb;
+      border-radius: 3px;
+  }
+  .responsive-tables td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+      padding-bottom: 10px;
+      white-space: normal;
+      text-align: right;
+  }
+  .responsive-tables td:before {
+      position: absolute;
+      top: 8px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      text-align: left;
+      font-weight: bold;
+  }
+  .responsive-tables .section td {
+      text-align: center;
+      color: white;
+  }
+  .responsive-tables td:before {
+      content: attr(data-title);
+      white-space: normal;
+      letter-spacing: -0.5px;
+      color: var(--teal);
+      float: left;
+  }
 
-th,
-td {
-  padding: 10px 10px;
-  border-bottom: solid 1px rgb(245, 245, 245);
+  .responsive-tables tr.section td {
+      padding: 10px;
+  }
+  .responsive-tables .main-group {
+      margin-bottom: 10px;
+  }
+  .responsive-tables .main-group td:nth-child(odd):not(.subheading),
+  .responsive-tables .main-group td:last-child {
+      border-top: #ddd 1px solid;
+      border-bottom: #ddd 1px solid;
+  }
+  .responsive-tables tbody .section + .main-group {
+      border-radius: 0 0 3px 3px;
+  }
+  .responsive-tables .subheading {
+      padding: 10px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: -0.5px;
+      background: rgba(0, 0, 0, 0.1);
+      color: black;
+      box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.05);
+      border-top: none;
+  }
+  .responsive-tables .basic-description {
+      padding: 10px;
+      text-align: center;
+  }
+  .responsive-tables .highlight {
+      background: none;
+  }
+  .responsive-tables .downplay,
+  .responsive-tables .downplay:before {
+      color: #999;
+      font-weight: normal;
+      font-size: 12px;
+  }
 }
 
 
@@ -1306,7 +1419,7 @@ td {
   border-radius: 100%
 }
 
-.display-none {
+.d-none {
   display: none;
 }
 
@@ -1429,6 +1542,9 @@ td {
   height: 200px;
   width: 100%;
 }
+.map-user{
+  height: 240px !important;
+}
 
 
 /* responsive column */
@@ -1462,7 +1578,8 @@ td {
 /* product card */
 .card {
   transition: 0.3s;
-  width: 40%;
+  width: 0%;
+  min-width: 250px;
   border: solid 1px rgb(238, 237, 237);
   margin: 10px;
   box-shadow: var(--shadow);
@@ -1491,3 +1608,56 @@ td {
 }
 
 /* bg image */
+.overflow-hide{
+  overflow: hidden;
+}
+
+/* image upload */
+
+    .img-upload-preview {
+      margin-top: 5px;
+      padding: 10px;
+      display: flex;
+    }
+    .previewImage {
+      padding: 5px;
+      height: auto;
+    }
+    .previewImage span {
+      width: 24px;
+      height: 24px;
+      position: relative;
+      right: 20px;
+      top: -4px;
+      float: left;
+      border: 2px solid gainsboro;
+      background: white;
+      padding: 2px;
+      color: #f30404;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: color .3s ease, border .3s ease;
+      text-align: center;
+      line-height: 1.4;
+  }
+
+    .previewImage img {
+      width: 70px;
+      height: 70px;
+      float: left;
+      border-radius: 5px;
+  }
+    .photo-file-detail {
+      background: #819d97;
+      padding: 7px;
+      color: #ffffff;
+      border-bottom: 1px solid #fff;
+      font-size: 16px;
+      text-transform: capitalize;
+    }
+     
+    .active{
+      border-bottom: solid 4px;
+      padding: 5px;
+      font-weight: bold;
+    }
