@@ -209,6 +209,9 @@ input:focus {
   .card-wrapper {
       flex-wrap: wrap;
   }
+  .card {
+    width: 41.66% !important;
+  }
 }
 
 .detail-img {
@@ -231,14 +234,10 @@ input:focus {
 
 /* Medium devices */
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .detail-img {
       width: 100%;
   }
-  .card {
-    width: 100%;
-  }
-
   .sm-100 {
       width: 100% !important;
   }
@@ -1619,8 +1618,8 @@ i {
 /* product card */
 .card {
   transition: 0.3s;
-  width: 0%;
-  min-width: 250px;
+  width: 23%;
+  min-width: 200px;
   border: solid 1px rgb(238, 237, 237);
   margin: 10px;
   box-shadow: var(--shadow);
