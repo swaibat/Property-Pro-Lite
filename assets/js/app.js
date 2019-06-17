@@ -1,31 +1,70 @@
-// google script
-var placeSearch, autocomplete;
+// delete confirm
+function closeDelete(){
+  document.querySelector('#delete').classList.remove('visible');
+}
 
-var componentForm = {
+function deleteModal(){
+  document.querySelector('#delete').classList.add('visible');
+}
+
+function closeIn(){
+  document.querySelector('#signin').classList.remove('visible');
+}
+
+function closeUp(){
+  document.querySelector('#signup').classList.remove('visible');
+}
+
+function signin(){
+  document.querySelector('#signin').classList.add('visible');
+}
+
+function signup(){
+  document.querySelector('#signup').classList.add('visible');
+}
+
+function agents() {
+  document.getElementById('user').classList.add('d-none'),
+  document.getElementById('agent').classList.remove('d-none');
+}
+
+function agents() {
+  document.getElementById('user').classList.add('d-none'),
+  document.getElementById('agent').classList.remove('d-none');
+}
+
+function users() {
+  document.getElementById('agent').classList.add('d-none'),
+  document.getElementById('user').classList.remove('d-none');
+}
+// google script
+let placeSearch,
+  autocomplete;
+
+const componentForm = {
   locality: 'long_name',
   administrative_area_level_1: 'short_name',
 };
 
 function initAutocomplete() {
-  autocomplete = new google.maps.places.Autocomplete(
-      document.getElementById('autocomplete'), {types: ['geocode']});
+  autocomplete = new google.maps.places.Autocomplete(document.getElementById('autocomplete'), { types: ['geocode'] });
   autocomplete.setFields(['address_component']);
   autocomplete.addListener('place_changed', fillInAddress);
 }
 
 function fillInAddress() {
   // Get the place details from the autocomplete object.
-  var place = autocomplete.getPlace();
+  const place = autocomplete.getPlace();
 
-  for (var component in componentForm) {
+  for (const component in componentForm) {
     document.getElementById(component).value = '';
     document.getElementById(component).disabled = false;
   }
 
-  for (var i = 0; i < place.address_components.length; i++) {
-    var addressType = place.address_components[i].types[0];
+  for (let i = 0; i < place.address_components.length; i++) {
+    const addressType = place.address_components[i].types[0];
     if (componentForm[addressType]) {
-      var val = place.address_components[i][componentForm[addressType]];
+      const val = place.address_components[i][componentForm[addressType]];
       document.getElementById(addressType).value = val;
     }
   }
@@ -33,39 +72,63 @@ function fillInAddress() {
 
 function geolocate() {
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      var geolocation = {
+    navigator.geolocation.getCurrentPosition((position) => {
+      const geolocation = {
         lat: position.coords.latitude,
-        lng: position.coords.longitude
+        lng: position.coords.longitude,
       };
-      var circle = new google.maps.Circle(
-          {center: geolocation, radius: position.coords.accuracy});
+      const circle = new google.maps.Circle({ center: geolocation, radius: position.coords.accuracy });
       autocomplete.setBounds(circle.getBounds());
     });
   }
 }
-// modal script
-const signupmodal = document.querySelector('#signup-modal'),
-  signupButton = document.querySelector('#signup'),
-  closeModalButton = document.querySelector('.close-modal'),
-  // sinin const
-  signinmodal = document.querySelector('#signin-modal'),
-  signinButton = document.querySelector('#signin'),
-  signinclose = document.querySelector('#close-signin');
 
-signupButton.addEventListener('click', () => {
-  signupmodal.classList.add('visible');
-});
+// file upload script
+let photoUpload = document.getElementById('photo-upload'),
+  imgUploadPreview = document.querySelector('.img-upload-preview');
 
-closeModalButton.addEventListener('click', () => {
-  signupmodal.classList.remove('visible');
-});
+photoUpload.onchange = function () {
+  for (let i = 0; i < photoUpload.files.length; i++) {
+    // check files supported only images jpg - jpeg - gif
+    if (/\.(jpe?g|png|gif)$/i.test(photoUpload.files[i].name) === false) {
+    	alert('this type is not supported');
+    	photoUpload.value = '';
+    	break;
+    } else {
+    	let reader = new FileReader(),
+        photoFileDetailsTemplate = ` 
+        
+        `;
 
-// // login
-signinButton.addEventListener('click', () => {
-  signinmodal.classList.add('visible');
-});
-signinclose.addEventListener('click', () => {
-  signinmodal.classList.remove('visible');
-});
+      reader.onload = function (event) {
+        	let previewImage = document.createElement('img'),
+        	previewImageBox = document.createElement('div'),
+          removeImage = document.createElement('span');
+          let att = document.createAttribute("class");
+          att.value = "icon-propbinlite";
+          removeImage.setAttributeNode(att);
+        	let removeIcon = document.createTextNode(' ');
+        	removeImage.appendChild(removeIcon);
+        	previewImage.src = reader.result;
+        	previewImageBox.appendChild(previewImage);
+        	previewImageBox.classList.add('previewImage');
+        	previewImageBox.appendChild(removeImage);
+        	imgUploadPreview.appendChild(previewImageBox);
+        // insert file detailes template
+        previewImageBox.insertAdjacentHTML('beforeend', photoFileDetailsTemplate);
+        removeImage.addEventListener('click', removeItem);
+        // confirm remove item
+        function removeItem(e) {
+        	if (confirm('Are you sure you want to remove this item?')) {
+        		e.target.parentElement.remove();
+        		photoUpload.value = '';
+        	}
+        }
+      };
+	    // read file url
+	    reader.readAsDataURL(event.target.files[i]);
+    }
+  }
+};
+
 
