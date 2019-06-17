@@ -16,10 +16,10 @@
         <div class="logo margin-l-3 margin-t-2"><a href="index.html">P<span>roperty Pro</span></a></div>
         <!-- navigation -->
         <div class="margin-l-auto margin-r-3 d-flex">
-            <ul class="d-flex white-txt">
-                <li class="margin-l-3"><a class="white-txt" href="postad.html">post ad</a></li>
-                <li class="margin-l-3"><a class="white-txt" href="myads.html">my ads</a></li>
-            </ul>
+                <ul class="d-flex white-txt">
+                        <li class="margin-l-3"><a class="white-txt" href="postad.html"><i class="icon-plus-pro-lite margin-r-2 sm-font"></i>post ad</a></li>
+                        <li class="margin-l-3"><a class="white-txt" href="myads.html"><i class="icon-list2-pro-lite margin-r-2 sm-font"></i>my ads</a></li>
+                    </ul>
         </div>
     </nav>
 
@@ -29,11 +29,11 @@
             <img class="circle" src="./assets/img/user.svg" height="85" width="85" alt="user">
         </div>
         <ul class="flex-y white-txt">
-            <li class="margin-y-3"><a class="" href="#">welcome! <h1>Agent</h1></a></li>
-            <li class="margin-y-3"><a class="" href="#">messages</a></li>
-            <li class="margin-y-3"><a class="" href="#">Notifications</a></li>
-            <li class="margin-y-3"><a class="" href="#">Logout</a></li>
-        </ul>
+                <li class="margin-y-3"><a class="" href="#">welcome! <h1><i class="icon-user-pro-lite margin-r-2"></i>Agent</h1></a></li>
+                <li class="margin-y-3"><a class="" href="#"><i class="icon-bubbles3-pro-lite margin-r-2"></i>messages</a></li>
+                <li class="margin-y-3"><a class="" href="#"><i class="icon-bubbles3-pro-lite margin-r-2"></i>Notifications</a></li>
+                <li class="margin-y-3"><a class="" href="index.html"><i class="icon-switch-pro-lite margin-r-2"></i> Logout</a></li>
+            </ul>
     </aside>
     <main role="main">
         <div class="white padding-1 shadow border-radius full-width page-container">
@@ -50,7 +50,11 @@
                 <input class="form-input" id="locality" placeholder="city" value="Kigali">
                 <input class="form-input" id="administrative_area_level_1" placeholder="state" value="Kigali City" >
                 <input class="form-input" type="text" placeholder="type" value="5 bedroom">
-                <input class="form-input" type="file">
+                <div class="margin-t-4">
+                        <label for="photo-upload" class="btn teal"><i class="icon-images-pro-lite margin-r-2"></i>Upload images</label>
+                        <input type="file" id="photo-upload" class="d-none" accept="image/*" multiple>
+                        <div class="img-upload-preview"></div>
+                    </div>
                 <button href="index.html" class="btn btn-gradient  margin-y-2 float-right "><span class="icon-proppencillite margin-r-1"></span>Edit</button>
             </form>
         </div>

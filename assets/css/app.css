@@ -21,11 +21,15 @@
 
 @font-face {
   font-family: 'property-pro';
-  src: url('../fonts/property-pro.eot?onizv0');
-  src: url('../fonts/property-pro.eot?onizv0#iefix') format('embedded-opentype'), url('../fonts/property-pro.ttf?onizv0') format('truetype'), url('../fonts/property-pro.woff?onizv0') format('woff'), url('../fonts/property-pro.svg?onizv0#property-pro') format('svg');
+  src:  url('../fonts/property-pro.eot?gmn0mk');
+  src:  url('../fonts/property-pro.eot?gmn0mk#iefix') format('embedded-opentype'),
+    url('../fonts/property-pro.ttf?gmn0mk') format('truetype'),
+    url('../fonts/property-pro.woff?gmn0mk') format('woff'),
+    url('../fonts/property-pro.svg?gmn0mk#property-pro') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+
 img,.card{
   transition: .4s ease all;
 }
@@ -1505,11 +1509,8 @@ th {
 
 
 /* my icons */
-
-[class^="icon-prop"],
-[class*=" icon-prop"] {
+i {
   font-family: 'property-pro' !important;
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -1519,23 +1520,63 @@ th {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-proppencillite:before {
+.icon-trash-pro-lite:before {
+  content: "\e900";
+}
+.icon-pencil-pro-lite:before {
   content: "\e905";
 }
-
-.icon-propphonelite:before {
+.icon-images-pro-lite:before {
+  content: "\e90e";
+}
+.icon-file-picture-pro-lite:before {
+  content: "\e927";
+}
+.icon-ticket-pro-lite:before {
+  content: "\e939";
+}
+.icon-cart-pro-lite:before {
+  content: "\e93a";
+}
+.icon-phone-pro-lite:before {
   content: "\e942";
 }
-
-.icon-propbinlite:before {
+.icon-location-pro-lite:before {
+  content: "\e947";
+}
+.icon-compass-pro-lite:before {
+  content: "\e949";
+}
+.icon-bell-pro-lite:before {
+  content: "\e951";
+}
+.icon-bubbles3-pro-lite:before {
+  content: "\e96f";
+}
+.icon-user-pro-lite:before {
+  content: "\e971";
+}
+.icon-lock-pro-lite:before {
+  content: "\e98f";
+}
+.icon-bin-pro-lite:before {
   content: "\e9ac";
 }
-
-.icon-propswitchlite:before {
+.icon-bin2-pro-lite:before {
+  content: "\e9ad";
+}
+.icon-switch-pro-lite:before {
   content: "\e9b6";
 }
-
-
+.icon-list2-pro-lite:before {
+  content: "\e9bb";
+}
+.icon-plus-pro-lite:before {
+  content: "\ea0a";
+}
+.icon-checkmark-pro-lite:before {
+  content: "\ea10";
+}
 /* google map style */
 
 #map {
@@ -1623,7 +1664,7 @@ th {
       padding: 5px;
       height: auto;
     }
-    .previewImage span {
+    .previewImage i {
       width: 24px;
       height: 24px;
       position: relative;
@@ -1660,4 +1701,7 @@ th {
       border-bottom: solid 4px;
       padding: 5px;
       font-weight: bold;
+    }
+    .sm-font{
+        font-size: 13px;
     }
