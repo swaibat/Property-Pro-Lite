@@ -1,0 +1,103 @@
+/* ========================[ fonts ]=====================*/
+
+@import url('https://fonts.googleapis.com/css?family=Barlow:300,400,500');
+
+/* my custom font */
+
+@font-face {
+    font-family: 'property-pro';
+    src: url('./assets/fonts/property-pro.eot?gmn0mk');
+    src: url('./assets/fonts/property-pro.eot?gmn0mk#iefix') format('embedded-opentype'), url('./assets/fonts/property-pro.ttf?gmn0mk') format('truetype'), url('./assets/fonts/property-pro.woff?gmn0mk') format('woff'), url('./assets/fonts/property-pro.svg?gmn0mk#property-pro') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* my icons */
+
+i {
+    font-family: 'property-pro' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-trash-pro-lite:before {
+    content: "\e900";
+}
+
+.icon-pencil-pro-lite:before {
+    content: "\e905";
+}
+
+.icon-images-pro-lite:before {
+    content: "\e90e";
+}
+
+.icon-file-picture-pro-lite:before {
+    content: "\e927";
+}
+
+.icon-ticket-pro-lite:before {
+    content: "\e939";
+}
+
+.icon-cart-pro-lite:before {
+    content: "\e93a";
+}
+
+.icon-phone-pro-lite:before {
+    content: "\e942";
+}
+
+.icon-location-pro-lite:before {
+    content: "\e947";
+}
+
+.icon-compass-pro-lite:before {
+    content: "\e949";
+}
+
+.icon-bell-pro-lite:before {
+    content: "\e951";
+}
+
+.icon-bubbles3-pro-lite:before {
+    content: "\e96f";
+}
+
+.icon-user-pro-lite:before {
+    content: "\e971";
+}
+
+.icon-lock-pro-lite:before {
+    content: "\e98f";
+}
+
+.icon-bin-pro-lite:before {
+    content: "\e9ac";
+}
+
+.icon-bin2-pro-lite:before {
+    content: "\e9ad";
+}
+
+.icon-switch-pro-lite:before {
+    content: "\e9b6";
+}
+
+.icon-list2-pro-lite:before {
+    content: "\e9bb";
+}
+
+.icon-plus-pro-lite:before {
+    content: "\ea0a";
+}
+
+.icon-checkmark-pro-lite:before {
+    content: "\ea10";
+}

@@ -1,0 +1,73 @@
+/* ========================[ colors ]=====================*/
+
+.white {
+  background: var(--white) !important;
+}
+
+.white-txt {
+  color: var(--white) !important;
+}
+
+.blue {
+  background: var(--theme-color) !important;
+}
+
+.blue-txt {
+  color: var(--theme-color) !important;
+}
+
+.teal {
+  background: var(--teal) !important;
+}
+
+.teal-txt {
+  color: var(--teal) !important;
+}
+
+.orange {
+  background: var(--orange) !important;
+}
+
+.orange-txt {
+  color: var(--orange) !important;
+}
+
+.red {
+  background: var(--red) !important;
+}
+
+.red-txt {
+  color: var(--red) !important;
+}
+
+.green {
+  background: var(--green) !important;
+}
+
+
+/* faint colors */
+
+.f-red {
+  background: #f8d7da !important;
+  color: #fc2032 !important;
+}
+
+.f-orange {
+  color: orange !important;
+  background: #fff3cd !important;
+}
+
+.f-blue {
+  color: var(--theme-color) !important;
+  background: #cce5ff !important;
+}
+
+.f-blue {
+  color: var(--theme-color) !important;
+  background: #cce5ff !important;
+}
+
+.f-green {
+  color: #019b03 !important;
+  background: #08cc3b66 !important;
+}
