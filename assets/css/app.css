@@ -4,6 +4,6 @@
 @import "./parts/components.css";
 @import "./parts/flexbox.css";
 @import "./parts/fonts.css";
-@import "./parts/media.css";
-@import "./parts/positions.css";
+@import "./parts/utilities.css";
 @import "./parts/spacing.css";
+@import "./parts/media.css";

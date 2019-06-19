@@ -9,6 +9,6 @@
     --shadow: 0 .13rem .23rem rgba(145, 145, 145, 0.295);
     --shadow-top: 0 -.125rem .25rem rgba(145, 145, 145, 0.295);
     --linear-gradient: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
-    --clip-path: polygon(100% 0, 100% 53%, 20% 100%, 0 100%, 0 0);
+    --clip-path: polygon(46% 0, 18% 97%, 0 88%, 0 0);
     --border-radius: .3rem;
   }
