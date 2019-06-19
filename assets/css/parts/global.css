@@ -1,0 +1,351 @@
+
+body{
+    background: #01baef;
+    overflow-x: hidden;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  img,.card{
+    transition: .4s ease all;
+  }
+  html {
+    font-family: 'Barlow', sans-serif;
+  }
+  
+  .bg {
+    position: fixed !important;
+    clip-path: polygon(100% 0, 100% 23%, 80% 35%, 0 21%, 0 0) !important;
+  }
+  
+  .bg-user {
+    position: fixed !important;
+    clip-path: polygon(100% 0, 100% 49%, 78% 69%, 0 45%, 0 0) !important;
+  }
+  
+  .bg-img {
+    width: 42%;
+    position: absolute;
+    margin-top: 4rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(70, 68, 68);
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .navbar {
+    width: 10.5rem;
+    margin-top: 5.5rem;
+    font-size: 15px;
+    height: calc(100vh - 3rem);
+  }
+  .footer-related{
+    width: 100%;
+    white-space: nowrap;
+  }
+  .footer-img{
+    width: 23% !important;
+    margin:2px;
+    border-radius: 10px;
+  }
+  
+  .logo a {
+    font-size: 25px;
+    color: var(--white);
+    font-weight: bolder;
+  }
+  
+  main {
+    display: flex;
+  }
+  
+  nav {
+    height: 3rem;
+    /* background: #fbfbfb33; */
+  }
+  
+  .page-container {
+    margin-top: 4rem;
+    margin-left: 12rem;
+    margin-right: 1rem;
+  }
+  
+  .container {
+    margin-top: 6rem !important;
+    margin: 1rem;
+  }
+  
+  footer {
+    text-align: center;
+    height: 1rem;
+    bottom: 0;
+  }
+  
+  .mobile-view {
+    display: none;
+  }
+  
+  .drop-content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #fff;
+    position: absolute;
+    padding: 1.5rem;
+    margin-top: 3.5rem;
+    border-radius: 1rem;
+    white-space: nowrap;
+    margin-left: -2rem;
+  }
+  
+  .border-radius {
+    border-radius: var(--border-radius);
+  }
+  
+  
+  /* ======================[ pages ]====================== */
+  
+  .landing {
+    margin-top: 10%;
+  }
+  
+  .landing .left-side {
+    width: 60%;
+  }
+  
+  .landing .right-side {
+    width: 40%;
+  }
+  
+  .form-input {
+    border: none;
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+    padding: .375rem 0;
+    font-size: .96rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-bottom: 1px solid #bdc3c7;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  select:focus,
+  input:focus {
+    outline-style: none;
+    box-shadow: 0 1px 0 var(--theme-color);
+    border-top: transparent;
+    transition: 200ms;
+  }
+  
+  [type="checkbox"] {
+    width: 5%;
+  }
+  
+  .align-center {
+    text-align: center;
+  }
+  
+  .card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* ========================[ media queries ]=====================*/
+  
+  
+  
+  
+  .detail-img {
+    width: 40%;
+  }
+  
+  .detail-img img {
+    width: 100%;
+  }
+  
+  .prdt-dtls {
+    width: 60%;
+  }
+  
+  .prdt-dtls p {
+    letter-spacing: .1px;
+    word-spacing: .1rem;
+  }
+  
+  /* ========================[ componets ]=====================*/
+  
+  
+  
+  .label {
+    margin-top: -1.5rem;
+    position: absolute;
+    background: var(--theme-color);
+    border-radius: 10px;
+    padding: 1px 10px;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  
+  
+  
+  /*==================== utility classes ==================*/
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .full-height {
+    height: 100%;
+  }
+  
+  .float-right {
+    float: right;
+  }
+  
+  
+  
+  
+  
+  /*====================== spacing classes ================================*/
+  
+  /* shadows */
+  
+  .shadow {
+    -webkit-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
+  }
+  
+  .shadow-top {
+    -webkit-box-shadow: var(--shadow-top);
+    box-shadow: var(--shadow-top);
+  }
+  
+  .circle {
+    border-radius: 100%
+  }
+  
+  .d-none {
+    display: none;
+  }
+  
+  .sport-badge {
+    min-width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+  }
+  
+  
+  
+  
+  .ad-img {
+    width: 4.5rem;
+    height: 3.5rem;
+    border-radius: .5rem;
+  }
+  
+  .product h2 {
+    display: block;
+    font-size: 1.5em;
+    margin: 2px;
+  }
+  
+  
+  
+  /* google map style */
+  
+  #map {
+    height: 200px;
+    width: 100%;
+  }
+  .map-user{
+    height: 240px !important;
+  }
+  
+  
+  /* responsive column */
+  
+  .lg-50 {
+    width: 48%
+  }
+  
+  .form-grp {
+    display: flex;
+    width: 100%;
+  }
+  
+  .footer-btn {
+    text-align: center;
+    border-top: 1px solid #dddddd;
+    height: 44px;
+  }
+  
+  
+  
+  /* bg image */
+  .overflow-hide{
+    overflow: hidden;
+  }
+  
+  /* image upload */
+  
+      .img-upload-preview {
+        margin-top: 5px;
+        padding: 10px;
+        display: flex;
+      }
+      .previewImage {
+        padding: 5px;
+        height: auto;
+      }
+      .previewImage i {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        right: 20px;
+        top: -4px;
+        float: left;
+        border: 2px solid gainsboro;
+        background: white;
+        padding: 2px;
+        color: #f30404;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: color .3s ease, border .3s ease;
+        text-align: center;
+        line-height: 1.4;
+    }
+  
+      .previewImage img {
+        width: 70px;
+        height: 70px;
+        float: left;
+        border-radius: 5px;
+    }
+      .photo-file-detail {
+        background: #819d97;
+        padding: 7px;
+        color: #ffffff;
+        border-bottom: 1px solid #fff;
+        font-size: 16px;
+        text-transform: capitalize;
+      }
+       
+      .active{
+        border-bottom: solid 4px;
+        padding: 5px;
+        font-weight: bold;
+      }
+      .sm-font{
+          font-size: 13px;
+      }
