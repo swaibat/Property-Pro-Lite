@@ -6,11 +6,11 @@ html {
 body {
   background: #ecf4fc;
   overflow-x: hidden;
+  margin: 0;
 }
 
 * {
   box-sizing: border-box;
-  margin: 0;
 }
 
 #bg {
@@ -111,7 +111,7 @@ nav {
 }
 
 .footer {
-  position: absolute;
+  position:fixed;
   bottom: 0;
   width: 100%;
   height: 2.5rem;
@@ -162,10 +162,6 @@ input:focus {
 .card-wrapper {
   display: flex;
   flex-wrap: wrap;
-}
-
-.margin-l-auto.margin-r-3.d-flex {
-  margin-top: 7px;
 }
 
 .detail-img {

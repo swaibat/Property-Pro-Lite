@@ -128,7 +128,7 @@ table {
 td {
   text-align: center;
   padding: 8px 10px 10px;
-  border-bottom: #b2b2b2 1px solid;
+  border-bottom: #b2b2b20d 1px solid;
 }
 
 td:first-child,
@@ -137,9 +137,8 @@ th:first-child {
 }
 
 th {
-  background: #999;
+  background: #0000007a;
   color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
   padding: 10px;
   text-align: center;
 }

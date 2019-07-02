@@ -6,8 +6,8 @@
 
 @font-face {
     font-family: 'property-pro';
-    src: url('./assets/fonts/property-pro.eot?gmn0mk');
-    src: url('./assets/fonts/property-pro.eot?gmn0mk#iefix') format('embedded-opentype'), url('./assets/fonts/property-pro.ttf?gmn0mk') format('truetype'), url('./assets/fonts/property-pro.woff?gmn0mk') format('woff'), url('./assets/fonts/property-pro.svg?gmn0mk#property-pro') format('svg');
+    src: url('../../fonts/property-pro.eot?gmn0mk');
+    src: url('../../fonts/property-pro.eot?gmn0mk#iefix') format('embedded-opentype'), url('../../fonts/property-pro.ttf?gmn0mk') format('truetype'), url('../../fonts/assets/fonts/property-pro.woff?gmn0mk') format('woff'), url('../../fonts/property-pro.svg?gmn0mk#property-pro') format('svg');
     font-weight: normal;
     font-style: normal;
 }
