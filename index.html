@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,15 @@
     <link rel="stylesheet" href="./assets/css/app.css">
     <title>Property-Pro-Lite</title>
 </head>
-<body>
-    <div id="bg" ></div>
+
+<body class=" white">
+    <div id="bg"></div>
     <!-- start of navigation -->
     <nav class="flex-x shadow padding-y-1 fixed-top full-width">
-        <div class="logo margin-l-3 margin-t-2"><a href="index.html">P<span>roperty Pro</span></a></div>
+        <div class="logo margin-l-3"><a href="index.html">P<span class="tracking-in-contract">roperty Pro</span></a></div>
         <!-- navigation -->
         <div class="margin-l-auto margin-r-3 d-flex">
-            <ul class="d-flex white-txt margin-t-2">
+            <ul class="d-flex  margin-t-2">
                 <li>About-us</li>
                 <li class="margin-l-3">FAQ</li>
             </ul>
@@ -26,19 +28,26 @@
             <div class="left-side  margin-t-max">
                 <h2 class="white-txt margin-l-4">Property Pro Lite is a platform where people can create and/or search properties for sale or rent</h2>
                 <div class="d-flex margin-t-4">
-                    <button onclick="signin()" class="btn green btn-lg margin-l-4">signin now</button>
-                    <button onclick="signup()" class="btn white blue-txt btn-lg margin-l-4">signup now</button>
+                    <button onclick="signin()" class="btn green white-txt btn-lg margin-l-4 bounce-in-fwd">signin now</button>
+                    <button onclick="signup()" class="btn white blue-txt btn-lg margin-l-4 bounce-in-fwd">signup now</button>
                 </div>
             </div>
             <div class="right-side">
-                <img class="bg-img" src="assets/img/land1.svg" alt="image">
+                <div class="page slide-in-elliptic-top-fwd">
+                    <span>get</span>
+                    <span>a</span>
+                    <span>new</span>
+                    <span>home</span>
+                    <span>today</span>
+                    <p>Property Pro Lite is a platform where people can create and/or search properties for sale or rent</p>
+                </div>
             </div>
         </div>
     </main>
     <!-- start of form models -->
     <div id="signup" class="modal-container">
         <div class="modal">
-            <button onclick="closeUp()"  class="close-modal">X</button>
+            <button onclick="closeUp()" class="close-modal">X</button>
             <form action="">
                 <h2 class="align-center margin-l-n3">sign-up</h2>
                 <input class="form-input" type="text" placeholder="Firstname" required>
@@ -54,8 +63,8 @@
     <div id="signin" class="modal-container">
         <div class="modal">
             <div class="d-flex margin-0 margin-l-n4 margin-t-2">
-                <button onclick="agents()" class="btn green">Agent</button>
-                <button onclick="users()" class="btn teal margin-l-n1">User</button>
+                <button onclick="agents()" class="btn btn-md green">Agent</button>
+                <button onclick="users()" class="btn btn-md teal margin-l-n1">User</button>
             </div>
             <button onclick="closeIn()" class="close-modal">X</button>
             <form id="user" action="adsList.html">
@@ -63,7 +72,7 @@
                 <input class="form-input" type="email" placeholder="Email adress" required>
                 <input class="form-input" type="password" placeholder="Password" minlength="5" required>
                 <button class="btn blue margin-y-4 float-right ">signin</button>
-            </form>            
+            </form>
             <form id="agent" class="d-none" action="myads.html">
                 <h2 class="align-center margin-t-2">Agent signIn</h2>
                 <input class="form-input" type="email" placeholder="Email adress" required>
@@ -72,6 +81,12 @@
             </form>
         </div>
     </div>
-    <script src="assets/js/app.js"></script> 
+    <script src="assets/js/app.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            document.getElementById("loader").classList.remove("loader");
+        });
+    </script>
 </body>
+
 </html>

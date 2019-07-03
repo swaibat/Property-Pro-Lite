@@ -245,18 +245,29 @@ th {
   text-align: center;
   border-radius: var(--border-radius)
 }
+select.form-input{
+  width: 200px;
+  margin-left: auto;
+}
+.modal select.form-input{
+  width: 100%;
+}
 
 .btn {
   padding: 7px 13px !important;
   border: none;
-  background: transparent;
   border-radius: .2rem;
   font-size: 14px;
   line-height: 1.5;
   cursor: pointer;
-  color: #ffffff;
   white-space: nowrap;
+  color:white;
 }
+.modal .btn-md{
+  padding: 4px 12px !important;
+  font-size: 13px;
+}
+
 
 .btn-gradient {
   background: var(--linear-gradient);

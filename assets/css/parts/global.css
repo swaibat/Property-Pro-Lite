@@ -12,6 +12,9 @@ body {
 * {
   box-sizing: border-box;
 }
+.left-side h2 {
+  display: none;
+}
 
 #bg {
   width: 100%;
@@ -209,11 +212,6 @@ input:focus {
   height: 200px;
   width: 100%;
 }
-
-.map-user {
-  height: 240px !important;
-}
-
 
 /* responsive column */
 

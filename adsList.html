@@ -7,45 +7,45 @@
     <link href="assets/css/app.css" rel="stylesheet">
     <title>Property-Pro-Lite</title>
 </head>
-<body>
+<body  id="loader" class="loader ">
     <div id="bg" class="bg"></div>
     <!-- start of navigation -->
-    <nav class="flex-x padding-y-1 fixed-top full-width">
+    <nav id="nav" class="flex-x padding-y-1 fixed-top full-width">
         <div class="logo margin-l-3 margin-t-2"><a href="index.html">P<span>roperty Pro</span></a></div>
         <!-- navigation -->
         <div class="margin-l-auto margin-r-3 d-flex">
-            <ul class="d-flex white-txt">
+            <ul class="d-flex white-txt margin-t-2">
                 <li class="margin-l-3"><a href="adsList.html" class="active white-txt" href="#"><i class="icon-list2-pro-lite margin-r-2 sm-font"></i>All ads</a></li>
-                <li class="margin-l-3"><a class="white-txt" href="index.html"><i class="icon-switch-pro-lite margin-r-1 sm-font"></i>logout</a></li>
+                <li class="margin-l-3"><a class="white-txt" href="index.html"><i class="icon-switch-pro-lite margin-r-1 sm-font"></i><span>logout</span></a></li>
             </ul>
         </div>
     </nav>
     <!-- //navigation -->
     <aside class="navbar fixed-left" id="collapse-menu">
         <div class="flex-center">
-            <img class="circle" src="./assets/img/user.svg" height="85" width="85" alt="user">
+            <span><img class="circle" src="./assets/img/user.svg" height="85" width="85" alt="user"></span>
         </div>
         <div class="flex-y">
-            <a href="specific.html" class="icon shadow padding-4 white margin-l-3 margin-y-3">2 bedrooms</a>
+            <a href="specific.html" class="icon shadow padding-4 white margin-l-3 margin-y-3"><span>2 bedrooms</span></a>
         </div>
         <div class="flex-y">
-            <a href="specific.html" class="icon shadow padding-4 white margin-l-3 margin-b-3">3 bedrooms</a>
+            <a href="specific.html" class="icon shadow padding-4 white margin-l-3 margin-b-3"><span>3 bedrooms</span></a>
         </div>
         <div class="flex-y">
-            <a href="specific.html" class="icon shadow padding-4 white margin-l-3 margin-b-3">5 bedrooms</a>
+            <a href="specific.html" class="icon shadow padding-4 white margin-l-3 margin-b-3"><span>5 bedrooms</span></a>
         </div>
         <div class="flex-y">
-            <a href="specific.html" class="icon shadow padding-4 white margin-l-3 margin-b-3">Mini flat</a>
+            <a href="specific.html" class="icon shadow padding-4 white margin-l-3 margin-b-3"><span>Mini flat</span></a>
         </div>
         <div class="flex-y">
-            <a href="specific.html" class="icon shadow padding-4 white margin-l-3 margin-b-3">Flat</a>
+            <a href="specific.html" class="icon shadow padding-4 white margin-l-3 margin-b-3"><span>Flat</span></a>
         </div>
     </aside>
-    <main role="main">
+    <main id="main" role="main">
         <div class="white padding-1 shadow border-radius full-width page-container margin-b-6">
             <select class="form-input margin-t-1">
                     <option selected>Select Type</option>
-                    <option onclick="filterSelection('all')" value="3 bedrooms">1 bedrooms</option>
+                    <option onclick="filterSelection('all')" value="3 bedrooms"><span>1 bedrooms</span></option>
                     <option value="3 bedrooms">2 bedrooms</option>
                     <option value="3 bedrooms">3 bedrooms</option>
                     <option value="3 bedrooms">4 bedrooms</option>
@@ -157,7 +157,7 @@
         </div>
     </main>
     <footer class="footer white">
-        <a class="float-right margin-r-4">Property-Pro-Lite 2019</a>
+        <a class="float-right margin-r-4"><span>Property-Pro-Lite 2019</span></a>
     </footer>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtdJ2lMzLN7jGl_KHHWv1UvXrhqExiSUM&libraries=places&callback=initAutocomplete" async defer></script>
     <script src="./assets/js/app.js"></script>

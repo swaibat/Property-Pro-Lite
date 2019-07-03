@@ -1,73 +1,73 @@
 /* ========================[ colors ]=====================*/
 
 .white {
-  background: var(--white) !important;
+  background: var(--white);
 }
 
 .white-txt {
-  color: var(--white) !important;
+  color: var(--white);
 }
 
 .blue {
-  background: var(--theme-color) !important;
+  background: var(--theme-color);
 }
 
 .blue-txt {
-  color: var(--theme-color) !important;
+  color: var(--theme-color);
 }
 
 .teal {
-  background: var(--teal) !important;
+  background: var(--teal);
 }
 
 .teal-txt {
-  color: var(--teal) !important;
+  color: var(--teal);
 }
 
 .orange {
-  background: var(--orange) !important;
+  background: var(--orange);
 }
 
 .orange-txt {
-  color: var(--orange) !important;
+  color: var(--orange);
 }
 
 .red {
-  background: var(--red) !important;
+  background: var(--red);
 }
 
 .red-txt {
-  color: var(--red) !important;
+  color: var(--red);
 }
 
 .green {
-  background: var(--green) !important;
+  background: var(--green);
 }
 
 
 /* faint colors */
 
 .f-red {
-  background: #f8d7da !important;
-  color: #fc2032 !important;
+  background: #f8d7da;
+  color: #fc2032;
 }
 
 .f-orange {
-  color: orange !important;
-  background: #fff3cd !important;
+  color: orange;
+  background: #fff3cd;
 }
 
 .f-blue {
-  color: var(--theme-color) !important;
-  background: #cce5ff !important;
+  color: var(--theme-color);
+  background: #cce5ff;
 }
 
 .f-blue {
-  color: var(--theme-color) !important;
-  background: #cce5ff !important;
+  color: var(--theme-color);
+  background: #cce5ff;
 }
 
 .f-green {
-  color: #019b03 !important;
-  background: #08cc3b66 !important;
+  color: #019b03;
+  background: #08cc3b66;
 }
