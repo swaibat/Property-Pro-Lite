@@ -1,3 +1,6 @@
+window.addEventListener('load', function () {
+  document.getElementById("loader").classList.remove("loader");
+  });
 function initMap() {
   // The location of 
   var kampala = {
@@ -64,7 +67,6 @@ const componentForm = {
   locality: 'long_name',
   administrative_area_level_1: 'short_name',
 };
-
 function initAutocomplete() {
   autocomplete = new google.maps.places.Autocomplete(document.getElementById('autocomplete'), { types: ['geocode'] });
   autocomplete.setFields(['address_component']);
@@ -149,5 +151,3 @@ photoUpload.onchange = function () {
     }
   }
 };
-
-
