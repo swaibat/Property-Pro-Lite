@@ -9,7 +9,7 @@
   border: solid 1px rgb(238, 237, 237);
   margin: 10px;
   box-shadow: var(--shadow);
-  border-radius: var(--border-radius);
+  border-radius: .7rem;
   overflow: hidden;
   background: white;
 }
@@ -22,6 +22,21 @@
 .card .btn {
   border: solid 1px gainsboro;
   line-height: 1.5;
+}
+
+.card .price-tag {
+  position: absolute;
+  padding: 1px 10px;
+  margin-top: 10px;
+}
+
+.card img {
+  height: 150px !important;
+}
+
+.card-foot {
+  padding: 0.01em 10px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .price {
@@ -245,10 +260,6 @@ th {
   text-align: center;
   border-radius: var(--border-radius)
 }
-select.form-input{
-  width: 200px;
-  margin-left: auto;
-}
 .modal select.form-input{
   width: 100%;
 }
@@ -320,4 +331,38 @@ select.form-input{
   background-clip: padding-box;
   border-bottom: 1px solid #bdc3c7;
   font-family: 'Roboto', sans-serif;
+}
+
+.product-form{
+	display: flex;
+  flex-direction: row;
+  background: white;
+  width: 100%;
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+}
+
+.product-form form{
+  width: 50%;
+}
+
+.product-form .preview-img {
+  width: 45%;
+}
+
+.product-form .preview-img img{
+  border-radius: var(--border-radius);
+}
+
+#results img{
+  height: 70px;
+  width: 23%;
+  margin: 2px;
+}
+
+#results img:first-child{
+  width: 100%;
+  height: 300px;
+  margin-top: -1.5rem;
+  box-shadow: var(--shadow)
 }

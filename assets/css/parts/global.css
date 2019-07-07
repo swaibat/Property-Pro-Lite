@@ -24,7 +24,9 @@ body {
   background: var(--linear-gradient);
   z-index: -10;
 }
-
+p{
+  margin: 0;
+}
 .bg {
   position: fixed !important;
   clip-path: polygon(100% 0, 100% 23%, 80% 35%, 0 21%, 0 0) !important;
@@ -39,7 +41,9 @@ img,
 .card {
   transition: .4s ease all;
 }
-
+.agent-img{
+  width: 60px !important;
+}
 html {
   font-family: 'Barlow', sans-serif;
 }
@@ -103,7 +107,7 @@ nav {
 }
 
 .page-container {
-  margin-top: 4rem;
+  margin-top: 7rem;
   margin-left: 12rem;
   margin-right: 1rem;
 }
@@ -170,9 +174,16 @@ input:focus {
 .detail-img {
   width: 40%;
 }
-
+.footer-img{
+  height: 70px !important;
+}
 .detail-img img {
   width: 100%;
+  border-radius: .8rem;
+  box-shadow: -1px -11px 40px -27px rgba(0,0,0,0.75);
+}
+.product p{
+  margin: .2rem !important ;
 }
 
 .prdt-dtls {

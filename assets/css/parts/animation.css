@@ -1,5 +1,4 @@
-.page span,
-p {
+.page span,.page p {
     text-transform: uppercase;
     -webkit-transition: all 50ms ease-in-out;
     transition: all 50ms ease-in-out;
