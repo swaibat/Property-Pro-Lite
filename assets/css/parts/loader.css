@@ -18,7 +18,7 @@
 }
 .loader .logo a,.loader li,.loader button,.loader .green,.loader h2,.loader .form-input,.loader img,.loader .card .btn,.loader .price,
 .loader p,.loader h4,.loader span,.loader i,
-.loader #navAccordion i,.loader .active {
+.loader #navAccordion i,.loader .active,.loader .d-flex.float-right.margin-t-2 a,.loader h1,.loader b,.loader li q{
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
@@ -68,5 +68,8 @@
 
 .loader #bg{
     display: none;
+}
+.loader a{
+	color: transparent !important;
 }
 
