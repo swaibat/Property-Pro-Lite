@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,12 @@
     <link href="assets/css/app.css" rel="stylesheet">
     <title>Property-Pro-Lite</title>
 </head>
+
 <body id="loader" class="loader ">
     <div id="bg" class="bg"></div>
     <!-- start of navigation -->
     <nav class="flex-x padding-y-1 fixed-top full-width">
-        <div class="logo margin-l-3 margin-t-2"><a href="index.html">P<span>roperty Pro</span></a></div>
+        <div class="logo margin-l-3 margin-t-2"><a href="index.html">P<span class="tracking-in-contract">roperty Pro</span></a></div>
         <!-- navigation -->
         <div class="margin-l-auto margin-r-3 d-flex">
             <ul class="d-flex white-txt">
@@ -34,26 +36,30 @@
     </aside>
     <main role="main">
         <div class="white padding-1 shadow border-radius full-width page-container">
-            <form class="margin-3" action="">
-                <h2 class="align-center margin-l-n3">Edit Advert</h2>
-                <div class="form-grp">
-                    <select class="form-input lg-50 sm-100">
-                        <option value="available">Available</option>
-                        <option value="sold">Sold</option>
-                    </select>
-                    <input class="form-input lg-50 sm-100 margin-l-auto" type="number" placeholder="price" value="2000">
+            <form class="margin-3" action="product.html">
+                <input class="form-input" type="number" placeholder="price" required>
+                <input class="form-input" id="autocomplete" placeholder="Enter your address" onFocus="geolocate()" type="text" />
+                <input class="form-input" id="locality" placeholder="city">
+                <input class="form-input" id="administrative_area_level_1" placeholder="state">
+                <select class="form-input full-width" id="type" required>
+                    <option value="singlerooms">singlerooms</option>
+                    <option value="2bedrooms">2bedrooms</option>
+                    <option value="3bedrooms">3bedrooms</option>
+                    <option value="4bedrooms">4bedrooms</option>
+                    <option value="5bedrooms">5bedrooms</option>
+                    <option value="miniflat">miniflat</option>
+                    <option value="flat">flat</option>
+                    <option value="others">others</option>
+                </select>
+                <div class="d-flex">
+                    <input class="form-input" type="text" id="myInput" placeholder="add images links...">
+                    <span onclick="newElement()" class="btn teal">Add</span>
                 </div>
-                <input class="form-input" id="autocomplete" placeholder="Enter your address" onFocus="geolocate()" type="text" value="Telecom House, KG 7 Avenue, Kigali, Rwanda" />
-                <input class="form-input" id="locality" placeholder="city" value="Kigali">
-                <input class="form-input" id="administrative_area_level_1" placeholder="state" value="Kigali City">
-                <input class="form-input" type="text" placeholder="type" value="5 bedroom">
-                <div class="margin-t-4">
-                    <label for="photo-upload" class="btn teal"><i class="icon-images-pro-lite margin-r-2"></i>Upload images</label>
-                    <input type="file" id="photo-upload" class="d-none" accept="image/*" multiple>
-                    <div class="img-upload-preview"></div>
-                </div>
-                <button href="index.html" class="btn btn-gradient  margin-y-2 float-right "><span class="icon-proppencillite margin-r-1"></span>Edit</button>
+                <button class="btn blue  margin-y-2 float-right ">post ad</button>
             </form>
+            <div class="preview-img flex-y">
+                <div id="results" class="other-image"></div>
+            </div>
         </div>
     </main>
     <footer class="footer white">
