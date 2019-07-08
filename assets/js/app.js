@@ -1,6 +1,6 @@
-// window.addEventListener('load', function () {
-//   document.getElementById("loader").classList.remove("loader");
-//   });
+window.addEventListener('load', function () {
+  document.getElementById("loader").classList.remove("loader");
+  });
 function initMap() {
   // The location of 
   var kampala = {
