@@ -12,9 +12,6 @@ body {
 * {
   box-sizing: border-box;
 }
-.left-side h2 {
-  display: none;
-}
 
 #bg {
   width: 100%;
@@ -41,6 +38,7 @@ img,
 .card {
   transition: .4s ease all;
 }
+
 .agent-img{
   width: 60px !important;
 }
@@ -249,7 +247,7 @@ input:focus {
 }
 
 
-/* image upload */
+/* image upload
 
 .img-upload-preview {
   margin-top: 5px;
@@ -260,7 +258,7 @@ input:focus {
 .previewImage {
   padding: 5px;
   height: auto;
-}
+} */
 
 .previewImage i {
   width: 24px;
@@ -285,6 +283,7 @@ input:focus {
   height: 70px;
   float: left;
   border-radius: 5px;
+  margin-top: 10px;
 }
 
 .photo-file-detail {
