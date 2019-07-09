@@ -67,8 +67,7 @@
                     <!--The div element for the map -->
                     <div id="map" class="map-user"></div>
                     <div class="d-flex float-right margin-t-2">
-                        <a href="adsList.html" class="btn btn-gradient "><i class="icon-checkmark-pro-lite margin-r-1"></i>Puchase</a>
-                        <a onclick="deleteModal()" class="btn red margin-l-auto"><span>&#9872;</span> Report Ad</a>
+                        <a onclick="report()" class="btn red margin-l-auto"><span>&#9872;</span> Report Ad</a>
                     </div>
                 </div>
             </div>
@@ -94,6 +93,14 @@
         </div>
         </div>
     </div>
+    
+    <div id="flash" class="flash d-none">
+        <div class="color green"></div>
+        <span class="text">Operation  successfull</span>
+        <div class="close">
+          <span></span>
+        </div>
+      </div>
     <footer class="footer white">
         <a class="float-right margin-r-4">Property-Pro-Lite 2019</a>
     </footer>
