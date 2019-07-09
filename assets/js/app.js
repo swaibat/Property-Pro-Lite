@@ -104,6 +104,55 @@ function geolocate() {
   }
 }
 
+
+// file upload script
+let photoUpload = document.getElementById('photo-upload'),
+  imgUploadPreview = document.querySelector('.img-upload-preview');
+
+photoUpload.onchange = function () {
+  for (let i = 0; i < photoUpload.files.length; i++) {
+    // check files supported only images jpg - jpeg - gif
+    if (/\.(jpe?g|png|gif)$/i.test(photoUpload.files[i].name) === false) {
+    	alert('this type is not supported');
+    	photoUpload.value = '';
+    	break;
+    } else {
+    	let reader = new FileReader(),
+        photoFileDetailsTemplate = ` 
+        
+        `;
+
+      reader.onload = function (event) {
+        	let previewImage = document.createElement('img'),
+        	previewImageBox = document.createElement('div'),
+          removeImage = document.createElement('i');
+          let att = document.createAttribute("class");
+          att.value = "icon-bin2-pro-lite";
+          removeImage.setAttributeNode(att);
+        	let removeIcon = document.createTextNode(' ');
+        	removeImage.appendChild(removeIcon);
+        	previewImage.src = reader.result;
+        	previewImageBox.appendChild(previewImage);
+        	previewImageBox.classList.add('previewImage');
+        	previewImageBox.appendChild(removeImage);
+        	imgUploadPreview.appendChild(previewImageBox);
+        // insert file detailes template
+        previewImageBox.insertAdjacentHTML('beforeend', photoFileDetailsTemplate);
+        removeImage.addEventListener('click', removeItem);
+        // confirm remove item
+        function removeItem(e) {
+        	if (confirm('Are you sure you want to remove this item?')) {
+        		e.target.parentElement.remove();
+        		photoUpload.value = '';
+        	}
+        }
+      };
+	    // read file url
+	    reader.readAsDataURL(event.target.files[i]);
+    }
+  }
+};
+
 const mylist = []
 // Create a new list item when clicking on the "Add" button
 function newElement() {

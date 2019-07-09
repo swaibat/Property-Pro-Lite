@@ -17,7 +17,7 @@
         <!-- navigation -->
         <div class="margin-l-auto margin-r-3 d-flex">
             <ul class="d-flex white-txt">
-                <li class="margin-l-3"><a class="white-txt" href="postad.html"><i class="icon-plus-pro-lite margin-r-2 sm-font"></i>post ad</a></li>
+                <li class="margin-l-3"><a class="active white-txt" href="postad.html"><i class="icon-plus-pro-lite margin-r-2 sm-font"></i>post ad</a></li>
                 <li class="margin-l-3"><a class="white-txt" href="myads.html"><i class="icon-list2-pro-lite margin-r-2 sm-font"></i>my ads</a></li>
             </ul>
         </div>
@@ -30,12 +30,13 @@
         <ul class="flex-y white-txt">
             <li class="margin-y-3"><a class="" href="#">welcome! <h1><i class="icon-user-pro-lite margin-r-2"></i>Agent</h1></a></li>
             <li class="margin-y-3"><a class="" href="#"><i class="icon-bubbles3-pro-lite margin-r-2"></i>messages</a></li>
-            <li class="margin-y-3"><a class="" href="#"><i class="icon-bubbles3-pro-lite margin-r-2"></i>Notifications</a></li>
+            <li class="margin-y-3"><a class="" href="#"><i class="icon-bell-pro-lite margin-r-2"></i>Notifications</a></li>
             <li class="margin-y-3"><a class="" href="index.html"><i class="icon-switch-pro-lite margin-r-2"></i> Logout</a></li>
         </ul>
     </aside>
+    <!-- start of main content -->
     <main role="main">
-        <div class="white padding-1 shadow border-radius full-width page-container">
+        <div id="forms" class="white padding-1 shadow border-radius full-width page-container">
             <form class="margin-3" action="product.html">
                 <input class="form-input" type="number" placeholder="price" required>
                 <input class="form-input" id="autocomplete" placeholder="Enter your address" onFocus="geolocate()" type="text" />
@@ -51,9 +52,10 @@
                     <option value="flat">flat</option>
                     <option value="others">others</option>
                 </select>
-                <div class="d-flex">
-                    <input class="form-input" type="text" id="myInput" placeholder="add images links...">
-                    <span onclick="newElement()" class="btn teal">Add</span>
+                <div class="margin-t-4">
+                    <label for="photo-upload" class="btn teal"><i class="icon-images-pro-lite margin-r-2"></i>Upload images</label>
+                    <input type="file" id="photo-upload" class="d-none" accept="image/*" multiple required>
+                    <div class="img-upload-preview"></div>
                 </div>
                 <button class="btn blue  margin-y-2 float-right ">post ad</button>
             </form>
@@ -67,6 +69,5 @@
     </footer>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtdJ2lMzLN7jGl_KHHWv1UvXrhqExiSUM&libraries=places&callback=initAutocomplete" async defer></script>
     <script src="./assets/js/app.js"></script>
-</body>
-
+</body>|';'
 </html>

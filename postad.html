@@ -52,9 +52,10 @@
                     <option value="flat">flat</option>
                     <option value="others">others</option>
                 </select>
-                <div class="d-flex">
-                    <input class="form-input" type="text" id="myInput" placeholder="add images links...">
-                    <span onclick="newElement()" class="btn teal">Add</span>
+                <div class="margin-t-4">
+                    <label for="photo-upload" class="btn teal"><i class="icon-images-pro-lite margin-r-2"></i>Upload images</label>
+                    <input type="file" id="photo-upload" class="d-none" accept="image/*" multiple required>
+                    <div class="img-upload-preview"></div>
                 </div>
                 <button class="btn blue  margin-y-2 float-right ">post ad</button>
             </form>
@@ -68,6 +69,5 @@
     </footer>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtdJ2lMzLN7jGl_KHHWv1UvXrhqExiSUM&libraries=places&callback=initAutocomplete" async defer></script>
     <script src="./assets/js/app.js"></script>
-</body>
-
+</body>|';'
 </html>
