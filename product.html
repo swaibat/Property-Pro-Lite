@@ -65,26 +65,22 @@
                     <div id="map"></div>
                     <div class="d-flex float-right margin-t-2">
                         <a href="editad.html" class="btn btn-gradient "><i class="icon-pencil-pro-lite margin-r-1"></i>Edit</a>
-                        <a href="myads.html" class="btn orange margin-l-3 "><i class="icon-checkmark-pro-lite margin-r-1"></i>sold</a>
-                        <a onclick="deleteModal()" class="btn red margin-l-auto"><i class="icon-bin2-pro-lite margin-r-1"></i>Delete</a>
+                        <a onclick="flashMe()" class="btn orange margin-l-3 "><i class="icon-checkmark-pro-lite margin-r-1"></i>sold</a>
+                        <a onclick="flashMe()" class="btn red margin-l-auto"><i class="icon-bin2-pro-lite margin-r-1"></i>Delete</a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
     <!-- confirm model -->
-    <div id="delete" class="modal-container">
-        <div class="modal align-center padding-0 ">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
-                    <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
-                    <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                </svg>
-            <div class="d-flex footer-btn">
-                <a href="myads.html" class="btn modal-btn red-txt">CONFIRM</a>
-                <a onclick="closeDelete()" class="btn modal-btn blue-txt">CANCEL</a>
-            </div>
+    <div id="flash" class="flash d-none">
+        <div class="color green"></div>
+        <span class="text">Operation  successfull</span>
+        <div class="close">
+          <span></span>
         </div>
-    </div>
+      </div>
+
     <footer class="footer white">
         <a class="float-right margin-r-4">Property-Pro-Lite 2019</a>
     </footer>

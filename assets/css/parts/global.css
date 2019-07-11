@@ -246,26 +246,15 @@ input:focus {
   overflow: hidden;
 }
 
-
-/* image upload
-
-.img-upload-preview {
-  margin-top: 5px;
-  padding: 10px;
-  display: flex;
+.signup{
+  color: blue !important;
 }
-
-.previewImage {
-  padding: 5px;
-  height: auto;
-} */
 
 .previewImage i {
   width: 24px;
   height: 24px;
   position: relative;
   right: 20px;
-  top: -4px;
   float: left;
   border: 2px solid gainsboro;
   background: white;
@@ -276,6 +265,7 @@ input:focus {
   transition: color .3s ease, border .3s ease;
   text-align: center;
   line-height: 1.4;
+  font-size: 12px;
 }
 
 .previewImage img {
@@ -307,4 +297,7 @@ input:focus {
 
 .icon.shadow.padding-4 {
   border-radius: 10px;
+}
+.previewImage{
+  margin-top: 15px;
 }
