@@ -164,3 +164,13 @@ photoUpload.onchange = function () {
     }
   }
 };
+
+function paid() {
+  window.scrollTo(0, 1000);
+}
+function featured() {
+  window.scrollTo(0, 450);
+}
+function popular() {
+  window.scrollTo(0, 900);
+}
