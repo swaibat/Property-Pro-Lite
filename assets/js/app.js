@@ -49,10 +49,12 @@ function closeUp(){
 
 function signin(){
   document.querySelector('#signin').classList.add('visible');
+  
 }
 
 function signup(){
   document.querySelector('#signup').classList.add('visible');
+  document.querySelector('#signin').classList.remove('visible');
 }
 
 function agents() {

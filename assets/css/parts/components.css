@@ -32,6 +32,7 @@
 
 .card img {
   height: 150px !important;
+  cursor: pointer;
 }
 
 .card img:hover {
@@ -156,8 +157,8 @@ th:first-child {
 }
 
 th {
-  background: #0000007a;
-  color: white;
+  background: #dedede7a;
+  color: #716f6f;
   padding: 10px;
   text-align: center;
 }
@@ -463,4 +464,28 @@ th {
   text-align: center;
   margin: 2px;
   display: none;
+}
+
+.card.featured{
+  width: 50%;
+}
+.left-cards{
+  width: 50%;
+}
+.card.landing{
+  width: 46%;
+}
+.card.featured img {
+  height: 361px !important;
+}
+.h4 {
+  font-size: 1.2em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.right-side img{
+  margin-top: -20px;
 }
