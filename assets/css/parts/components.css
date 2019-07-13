@@ -32,6 +32,7 @@
 
 .card img {
   height: 150px !important;
+  cursor: pointer;
 }
 
 .card img:hover {
@@ -156,8 +157,8 @@ th:first-child {
 }
 
 th {
-  background: #0000007a;
-  color: white;
+  background: #dedede7a;
+  color: #716f6f;
   padding: 10px;
   text-align: center;
 }
@@ -379,59 +380,112 @@ th {
   color: var(--red);
   cursor: pointer;
 }
+.flash {
+  height: 75px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  background-color: #ffffff;
+  box-shadow: 0 0 30px 2px #dddddd;
+  -webkit-animation: flash-show 300ms ease 0s;
+          animation: flash-show 300ms ease 0s;
+}
+.flash.hide {
+  -webkit-animation: flash-hide 5ms ease 0s;
+          animation: flash-hide 5ms ease 0s;
+  right: -100%;
+  opacity: 0;
+}
+.flash .color {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 5px solid #3498db;
+  border-radius: 100%;
+  margin: 25px;
+}
+.flash .color.green {
+  border-color: #2ecc71;
+}
+.flash .color.red {
+  border-color: #e74c3c;
+}
+.flash .text {
+  display: inline-block;
+  line-height: 75px;
+  vertical-align: top;
+  margin-right: 100px;
+  font-family: "Roboto";
+  font-size: 0.9em;
+  font-weight: 300;
+  color: rgba(25, 25, 25, 0.75);
+}
+.flash .close {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.flash .close:hover span:before, .flash .close:hover span:after {
+  background-color: rgba(25, 25, 25, 0.25);
+}
+.flash .close span {
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+.flash .close span:before, .flash .close span:after {
+  content: "";
+  width: 16px;
+  height: 2px;
+  background-color: rgba(25, 25, 25, 0.5);
+  transition: all 200ms ease;
+  position: absolute;
+  top: 7px;
+}
+.flash .close span:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.flash .close span:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
 
-svg {
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
   width: 100px;
-  display: block;
-  margin: 40px auto 0;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
 }
-.path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 0;
+
+.card.featured{
+  width: 50%;
 }
-.path.circle {
-  -webkit-animation: dash 0.9s ease-in-out;
-  animation: dash 0.9s ease-in-out;
+.left-cards{
+  width: 50%;
 }
-.path.line {
-  stroke-dashoffset: 1000;
-  -webkit-animation: dash 0.9s 0.35s ease-in-out forwards;
-  animation: dash 0.9s 0.35s ease-in-out forwards;
+.card.landing{
+  width: 46%;
 }
-.path.check {
-  stroke-dashoffset: -100;
-  -webkit-animation: dash-check 0.9s 0.35s ease-in-out forwards;
-  animation: dash-check 0.9s 0.35s ease-in-out forwards;
+.card.featured img {
+  height: 361px !important;
 }
-@-webkit-keyframes dash {
-  0% {
-    stroke-dashoffset: 1000;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
+.h4 {
+  font-size: 1.2em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
-@keyframes dash {
-  0% {
-    stroke-dashoffset: 1000;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-@-webkit-keyframes dash-check {
-  0% {
-    stroke-dashoffset: -100;
-  }
-  100% {
-    stroke-dashoffset: 900;
-  }
-}
-@keyframes dash-check {
-  0% {
-    stroke-dashoffset: -100;
-  }
-  100% {
-    stroke-dashoffset: 900;
-  }
+.right-side img{
+  margin-top: -20px;
 }

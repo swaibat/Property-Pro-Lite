@@ -12,34 +12,190 @@
 <body class=" white">
     <div id="bg"></div>
     <!-- start of navigation -->
-    <nav class="flex-x shadow padding-y-1 fixed-top full-width">
+    <nav class="flex-x shadow padding-y-1 full-width">
         <div class="logo margin-l-3"><a href="index.html">P<span class="tracking-in-contract">roperty Pro</span></a></div>
         <!-- navigation -->
         <div class="margin-l-auto margin-r-3 d-flex">
-            <ul class="d-flex  margin-t-2">
-                <li>About-us</li>
-                <li class="margin-l-3">FAQ</li>
-            </ul>
+            <div class="d-flex">
+                <button onclick="signin()" class="btn teal white-txt btn-lg margin-l-4 bounce-in-fwd">signin</button>
+                <button onclick="signup()" class="btn white blue-txt btn-lg margin-l-4 bounce-in-fwd shadow">signup</button>
+            </div>
         </div>
     </nav>
     <!-- //navigation -->
     <main role="main">
-        <div class="landing d-flex full-width">
-            <div class="left-side  margin-t-1 margin-l-3">
+        <div class="flex-y">
+            <div class="landing d-flex full-width">
+                <div class="left-side  margin-t-1 margin-l-3">
                     <div class="page slide-in-elliptic-top-fwd">
                         <span>Get a new home today</span>
                         <p>Property Pro Lite is a platform where people can create and/or search properties for sale or rent</p>
                     </div>
-                <div class="d-flex margin-t-4">
-                    <button onclick="signin()" class="btn green white-txt btn-lg margin-l-4 bounce-in-fwd">signin now</button>
-                    <button onclick="signup()" class="btn white blue-txt btn-lg margin-l-4 bounce-in-fwd">signup now</button>
+                </div>
+                <div class="right-side">
+                    <img src="./assets/img/ads/house_PNG7.webp" alt="landding">
                 </div>
             </div>
-            <div class="right-side">
-                <img src="./assets/img/ads/house_PNG7.webp" alt="landding">
+            <div class="padding-1 border-radius full-width white shadow-top  margin-b-6 margin-t-n6">
+                <div class="d-flex">
+                    <div class="margin-y-3 full-width">
+                        <div class="margin-x-3 margin-t-n5"><span class="h4 btn teal round">Featured property</span>
+                            <div class="float-right d-flex">
+                                <a onclick="popular()" class="btn blue margin-x-2">Popular</a>
+                                <a onclick="featured()"class="btn blue  margin-x-2">featured</a>
+                                <a onclick="paid()" class="btn blue  margin-x-2">Paid</a>
+                            </div>
+                        </div>  
+                    </div> 
+                </div>
+                <div class="card-wrapper flex-center ">
+                    <div class="d-flex">
+                        <div class="card featured">
+                            <span class="orange price-tag">90000</span>
+                            <a onclick="signin()"><img src="https://res.cloudinary.com/dbe1sfmr4/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1562559962/uganda-property-agents_yhol1l.jpg" alt="Avatar" style="width:100%"></a>
+                            <div class="card-foot">
+                                <div class="d-flex padding-2">
+                                    <p>5-bedroom</p>
+                                    <a class="margin-l-auto orange-txt" onclick="signin()">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-wrap left-cards">
+                            <div class="card landing">
+                                <span class="orange price-tag">105000</span>
+                                <a onclick="signin()"><img src="https://res.cloudinary.com/dbe1sfmr4/image/upload/v1562085549/house4_dzlwlf.jpg" alt="Avatar" style="width:100%"></a>
+                                <div class="card-foot">
+                                    <div class="d-flex padding-2">
+                                        <p>5-bedroom</p>
+                                        <a class="margin-l-auto orange-txt" onclick="signin()">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card landing">
+                                <span class="orange price-tag">775000</span>
+                                <a onclick="signin()"><img src="https://res.cloudinary.com/dbe1sfmr4/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1562560208/uganda-1-747x420_g5ff0z.jpg" alt="Avatar" style="width:100%"></a>
+                                <div class="card-foot">
+                                    <div class="d-flex padding-2">
+                                        <p>5-bedroom</p>
+                                        <a class="margin-l-auto orange-txt" onclick="signin()">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card landing">
+                                <span class="orange price-tag">905000</span>
+                                <a onclick="signin()"><img src="https://res.cloudinary.com/dbe1sfmr4/image/upload/v1562535481/wp2464213_vgbmzi.jpg" alt="Avatar" style="width:100%"></a>
+                                <div class="card-foot">
+                                    <div class="d-flex padding-2">
+                                        <p>5-bedroom</p>
+                                        <a class="margin-l-auto orange-txt" onclick="signin()">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card landing">
+                                <span class="orange price-tag">500000</span>
+                                <a onclick="signin()"><img src="https://res.cloudinary.com/dbe1sfmr4/image/upload/v1562535586/wp2464219_nwt5dr.jpg" alt="Avatar" style="width:100%"></a>
+                                <div class="card-foot">
+                                    <div class="d-flex padding-2">
+                                        <p>5-bedroom</p>
+                                        <a class="margin-l-auto orange-txt" onclick="signin()">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <h2 class="margin-l-3">popular Property</h2>
+                    <div class="card-wrapper flex-center">
+                    <div class="card">
+                        <span class="orange price-tag">100000</span>
+                        <a onclick="signin()"><img src="https://res.cloudinary.com/dbe1sfmr4/image/upload/v1562523352/pexels-photo-271816_wopggq.jpg" alt="Avatar" style="width:100%"></a>
+                        <div class="card-foot">
+                            <div class="d-flex padding-2">
+                                <p>5-bedroom</p>
+                                <a class="margin-l-auto orange-txt" onclick="signin()">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="orange price-tag">205000</span>
+                        <a onclick="signin()"><img src="https://res.cloudinary.com/dbe1sfmr4/image/upload/v1562085103/house_PNG7_w2cxge.webp" alt="Avatar" style="width:100%"></a>
+                        <div class="card-foot">
+                            <div class="d-flex padding-2">
+                                <p>5-bedroom</p>
+                                <a class="margin-l-auto orange-txt" onclick="signin()">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="orange price-tag">550000</span>
+                        <a onclick="signin()"><img src="https://res.cloudinary.com/dbe1sfmr4/image/upload/v1562085590/house2_ret4vf.jpg" alt="Avatar" style="width:100%"></a>
+                        <div class="card-foot">
+                            <div class="d-flex padding-2">
+                                <p>5-bedroom</p>
+                                <a class="margin-l-auto orange-txt" onclick="signin()">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="orange price-tag">400000</span>
+                        <a onclick="signin()"><img src="https://res.cloudinary.com/dbe1sfmr4/image/upload/v1562085590/house2_ret4vf.jpg" alt="Avatar" style="width:100%"></a>
+                        <div class="card-foot">
+                            <div class="d-flex padding-2">
+                                <p>5-bedroom</p>
+                                <a class="margin-l-auto orange-txt" onclick="signin()">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <h2 class="margin-l-3">Paid Property</h2>
+                    <div class="card-wrapper flex-center">
+                    <div class="card">
+                        <span class="orange price-tag">205000</span>
+                        <a onclick="signin()"><img src="https://res.cloudinary.com/dbe1sfmr4/image/upload/v1562085103/house_PNG7_w2cxge.webp" alt="Avatar" style="width:100%"></a>
+                        <div class="card-foot">
+                            <div class="d-flex padding-2">
+                                <p>5-bedroom</p>
+                                <a class="margin-l-auto orange-txt" onclick="signin()">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="orange price-tag">550000</span>
+                        <a onclick="signin()"><img src="https://res.cloudinary.com/dbe1sfmr4/image/upload/v1562085590/house2_ret4vf.jpg" alt="Avatar" style="width:100%"></a>
+                        <div class="card-foot">
+                            <div class="d-flex padding-2">
+                                <p>5-bedroom</p>
+                                <a class="margin-l-auto orange-txt" onclick="signin()">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="orange price-tag">400000</span>
+                        <a onclick="signin()"><img src="https://res.cloudinary.com/dbe1sfmr4/image/upload/v1562085590/house2_ret4vf.jpg" alt="Avatar" style="width:100%"></a>
+                        <div class="card-foot">
+                            <div class="d-flex padding-2">
+                                <p>5-bedroom</p>
+                                <a class="margin-l-auto orange-txt" onclick="signin()">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                            <span class="orange price-tag">400000</span>
+                            <a onclick="signin()"><img src="https://res.cloudinary.com/dbe1sfmr4/image/upload/v1562085590/house2_ret4vf.jpg" alt="Avatar" style="width:100%"></a>
+                            <div class="card-foot">
+                                <div class="d-flex padding-2">
+                                    <p>5-bedroom</p>
+                                    <a class="margin-l-auto orange-txt" onclick="signin()">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
             </div>
         </div>
     </main>
+    <footer class="footer white">
+        <a class="float-right margin-r-4">Property-Pro-Lite 2019</a>
+    </footer>
     <!-- start of form models -->
     <div id="signup" class="modal-container">
         <div class="modal">
@@ -50,10 +206,10 @@
                 <input class="form-input" type="text" placeholder="Lastname" required>
                 <input class="form-input" type="number" placeholder="phoneNumber" required>
                 <input class="form-input" type="email" placeholder="Email adress" required>
-                <select class="form-input full-width" id="agent" required>
+                <select class="form-input full-width" required>
                     <option value="">Are you an agent ?</option>
-                    <option value="truetrue">true</option>
-                    <option value="false">false</option>
+                    <option value="true">yes</option>
+                    <option value="false">No</option>
                 </select>
                 <input class="form-input" type="password" placeholder="Password" minlength="5" required>
                 <button href="index.html" class="btn blue  margin-y-4 float-right ">Signup now</button>
@@ -73,21 +229,18 @@
                 <input class="form-input" type="email" placeholder="Email adress" required>
                 <input class="form-input" type="password" placeholder="Password" minlength="5" required>
                 <button class="btn blue margin-y-4 float-right ">signin</button>
+                <p class="margin-t-4">Have no account <a class="signup" onclick="signup()" >signup</a></p>
             </form>
             <form id="agent" class="d-none" action="myads.html">
                 <h2 class="align-center margin-t-2">Agent signIn</h2>
                 <input class="form-input" type="email" placeholder="Email adress" required>
                 <input class="form-input" type="password" placeholder="Password" minlength="5" required>
                 <button class="btn blue margin-y-4 float-right ">signin</button>
+                <p class="margin-t-4">Have no account <a class="signup" onclick="signup()">signup</a></p>
             </form>
         </div>
     </div>
     <script src="assets/js/app.js"></script>
-    <script>
-        window.addEventListener('load', function() {
-            document.getElementById("loader").classList.remove("loader");
-        });
-    </script>
 </body>
 
 </html>

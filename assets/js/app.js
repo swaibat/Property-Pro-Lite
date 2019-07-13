@@ -25,7 +25,17 @@ function closeDelete(){
   document.querySelector('#delete').classList.remove('visible');
 }
 
-function deleteModal(){
+function flashMe(){
+  document.querySelector('#flash').classList.remove('d-none');
+  setTimeout(sayHi, 2000);
+}
+
+ function sayHi() {
+  document.querySelector('#flash').classList.add('d-none');
+  location.replace("myads.html")
+} 
+
+function report(){
   document.querySelector('#delete').classList.add('visible');
 }
 
@@ -39,10 +49,12 @@ function closeUp(){
 
 function signin(){
   document.querySelector('#signin').classList.add('visible');
+  
 }
 
 function signup(){
   document.querySelector('#signup').classList.add('visible');
+  document.querySelector('#signin').classList.remove('visible');
 }
 
 function agents() {
@@ -153,26 +165,12 @@ photoUpload.onchange = function () {
   }
 };
 
-const mylist = []
-// Create a new list item when clicking on the "Add" button
-function newElement() {
-  var img = document.createElement("IMG");
-  var inputValue = document.getElementById("myInput").value;
-  document.getElementById("forms").classList.add('product-form');
-  var att = document.createAttribute("src");
-  document.getElementById('myInput').value = '';
-	att.value = inputValue;
-  img.setAttributeNode(att);
-  
-  if (inputValue === '') {
-    alert("You must write something!");
-  } else {
-    document.getElementById("results").appendChild(img);
-    const mynew = document.getElementById("results").getElementsByTagName("img")
-        // console.log(mynew[0].currentSrc) 
-        mylist.push(mynew[0].currentSrc)
-
-    console.log(mylist) 
-  }
-  document.getElementById("results").value = "";
+function paid() {
+  window.scrollTo(0, 1000);
+}
+function featured() {
+  window.scrollTo(0, 450);
+}
+function popular() {
+  window.scrollTo(0, 900);
 }
