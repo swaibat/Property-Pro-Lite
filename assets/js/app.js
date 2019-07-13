@@ -49,10 +49,12 @@ function closeUp(){
 
 function signin(){
   document.querySelector('#signin').classList.add('visible');
+  
 }
 
 function signup(){
   document.querySelector('#signup').classList.add('visible');
+  document.querySelector('#signin').classList.remove('visible');
 }
 
 function agents() {
@@ -162,3 +164,13 @@ photoUpload.onchange = function () {
     }
   }
 };
+
+function paid() {
+  window.scrollTo(0, 1000);
+}
+function featured() {
+  window.scrollTo(0, 450);
+}
+function popular() {
+  window.scrollTo(0, 900);
+}
