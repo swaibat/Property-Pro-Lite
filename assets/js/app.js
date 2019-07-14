@@ -165,7 +165,7 @@ photoUpload.onchange = function () {
   }
 };
 
-function paid() {
+function latest() {
   window.scrollTo(0, 1000);
 }
 function featured() {
